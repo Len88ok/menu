@@ -1,0 +1,53 @@
+.cloud {
+	min-height: 600px; 
+	background-image: url('../images/cloud-bg.png');
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	-webkit-background-size: 35%; 
+	  -o-background-size: 35%; 
+	  background-size: 35%;
+	&-heading {
+		font-size: 30px;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-bottom: 0.5em;
+		span {
+			color: #00c6ff;
+			font-weight: 700;
+		}		
+	}
+	&-info {
+		margin-bottom: 2em;
+	}
+	&-content {
+		padding-top: 20%;
+	}
+}
+
+@media only screen  and (max-width : 991px) {
+	.cloud {
+		min-height: 100%;
+		text-align: center;
+		-webkit-background-size: 0;
+		 -o-background-size: 0;
+		 background-size: 0; 
+		&-content {
+			padding-top: 0;
+		}
+		&-heading {
+			font-size: 20px;
+		}
+	}
+}
+
+@media only screen  and (min-width : 1824px) {
+	.cloud {
+		min-height: 750px; 
+		-webkit-background-size: 40%; 
+		  -o-background-size: 40%; 
+		  background-size: 40%;
+    &-heading {
+    	font-size: 36px;
+    }
+	}
+}

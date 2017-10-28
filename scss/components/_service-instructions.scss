@@ -1,0 +1,156 @@
+.service-instructions {
+	background-color: #f5f5f5;
+	padding-bottom: 0;
+	&-wrap {
+		padding-top: 40px;
+	}
+	&-info {
+		max-width: 45%; 
+		min-height: 373px; 
+		position: absolute;
+		padding: 4% 10% 0 5%;
+		img {
+			width: 100%;
+		}
+	}
+	&-img {
+		max-width: 70%;
+		img {
+			width: 100%;
+		} 
+	}
+	&-right {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		margin-bottom: 30px;
+		.service-instructions-info {
+			top: -45px;
+			left: 0;
+		}
+		.service-instructions-img {
+			float: right;
+			margin-bottom: 60px;
+		}
+	}
+	&-left {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		margin-bottom: 60px;
+		.service-instructions-info {
+			right: 0;
+			bottom: 100px;
+		}
+		.service-instructions-img {
+			float: left;
+			margin-bottom: 150px;
+		}
+	}
+	&-info {
+		&.first {
+			background-color: #e89c53;
+			background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 100%);
+		}
+		&.second {
+			background-color: #f8df1d;
+			background-image: linear-gradient(to right, #ffe404 0%, #ff9600 100%);
+			padding: 5%;
+		}
+		&.third {
+			background-color: #00c6ff;
+			background-image: linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
+		}
+		&.fourth {
+			background-color: #00ffd2;
+			background-image: linear-gradient(to right, #fc67fa 0%, #f4c4f3 100%);
+		}
+	}
+	&-title {
+		color: #000000;
+		font-family: "Open Sans";
+		font-size: 22px;
+		font-weight: 400;
+		position: relative;
+		margin-bottom: 20px;
+		padding-bottom: 5px; 
+		&:after {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			left: 0;
+			bottom: 0;
+			width: 20%;
+			height: 1px;
+			background: #000000;
+		}
+	}
+	&-text {
+		font-size: 14px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			left: 0;
+			top: -15px;
+			width: 20%;
+			height: 1px;
+			background: #000000;
+		}
+	}
+	&-graph {
+		margin-top: 2em;
+	}
+}
+
+@media only screen  and (max-width : 991px) {
+	.service-instructions {
+		&-wrap {
+			padding-top: 0;
+		}
+		&-info {
+			max-width: 100%; 
+			min-height: auto; 
+			position: relative;
+			padding: 5%;
+			margin-bottom: 20px;
+		}
+		&-left {
+			position: relative;
+			margin-bottom: 20px;
+			.service-instructions-info {
+				right: auto;
+				bottom: auto;
+			}
+			.service-instructions-img {
+				float: none;
+				margin-bottom: 0;
+				margin: auto;
+			}
+		}
+		&-right {
+			margin-bottom: 20px;
+			.service-instructions-info {
+				top: auto;
+				left: auto;
+			}
+			.service-instructions-img {
+				float: none;
+				margin-bottom: 0;
+				margin: auto;
+			}
+		}
+	}
+}
+
+@media only screen  and (min-width : 1824px) { 
+	.service-instructions {
+		&-title {
+			font-size: 26px;
+		}
+		&-text {
+			font-size: 16px;
+		}
+	}
+}

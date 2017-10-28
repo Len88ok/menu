@@ -1,0 +1,124 @@
+.advantages-banner {
+	min-height: 600px;
+	background-image: url("../images/bg-top.png");
+	background-position: 0 0;
+	background-repeat: no-repeat; 
+	-webkit-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover; 
+	z-index: 1;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #000000;
+		opacity: 0.6;
+		z-index: -1;
+	}
+	&-content {
+		padding-top: 15%;
+		padding-left: 40px;
+		color: #ffffff;
+	}
+	&-title {
+		font-size: 50px;
+		text-transform: uppercase;	
+		span{
+			background: linear-gradient(to right, #ffe404 0%, #ff9600 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+	&-subtitle {
+		margin-bottom: 50px;
+		font-family: "Open Sans";
+		font-size: 36px;
+		font-weight: 300;
+		span{
+			background: linear-gradient(to right, #ffe404 0%, #ff9600 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+	&-list {
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&-item {
+		margin-bottom: 25px;
+		margin-left: 10px;
+		span {
+			position: relative;
+			margin-right: 30px;
+			&:after {
+				content: '';
+				display: inline-block;
+				width: 41px;
+				height: 41px;
+				position: absolute;
+				top: -13px;
+				left: -11px;
+				background-image: url('../images/ellips.png'); 
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				-webkit-background-size: 100%; 
+				 -o-background-size: 100%; 
+				 background-size: 100%;  
+			}
+		}
+	}
+}
+
+@media only screen  and (max-width : 991px) { 
+	.advantages-banner {
+			background-position: center center;
+		&-content {
+			padding-top: 40%;
+			padding-left: 20px;
+		}
+		&-title {
+			font-size: 28px;
+		}
+		&-subtitle {
+			font-size: 18px;
+			margin-bottom: 28px;
+		}
+		&-item {
+			margin-bottom: 15px;
+			span {
+				margin-right: 20px;
+				&:after {
+					width: 32px;
+					height: 32px;
+					top: -8px;
+					left: -6px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen  and (min-width : 1824px) {
+	.advantages-banner {
+ 		min-height: 800px;
+ 		&-title {
+ 			font-size: 70px;
+ 			margin-bottom: 0;
+ 		}
+ 		&-subtitle {
+			margin-bottom: 75px;
+		}
+		&-item {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+
+
+

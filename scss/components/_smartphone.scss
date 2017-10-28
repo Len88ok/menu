@@ -1,0 +1,45 @@
+.smartphone-menu {
+	.section-title {
+		margin-bottom: 20px;
+	}
+	&-list {
+		text-align: center;
+	}
+	&-item {
+		display: inline-block;
+		width: 15%;
+		margin-left: 5px;
+		margin-right: 5px;
+		img {
+			width: 100%;
+		}
+		&.with-wrap {
+				width: 23%;
+				margin-left: -20px;
+				margin-right: -20px;
+		}
+	}
+}
+
+@media only screen  and (max-width : 991px) {
+	.smartphone-menu {
+		&-item {
+			&.with-wrap {
+				width: 22%;
+				margin-left: -5px;
+				margin-right: -5px;
+			}
+		}
+	}
+}
+
+@media only screen  and (min-width : 1824px) {
+	.smartphone-menu {
+		&-item {
+			&.with-wrap {
+				margin-left: -25px;
+				margin-right: -25px;
+			}
+		}
+	}
+}

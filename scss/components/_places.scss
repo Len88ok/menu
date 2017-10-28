@@ -1,0 +1,43 @@
+.places {
+	&-item {
+		width: 170px;
+		height: 170px;
+		border: 1px solid #f6f6f6;
+		background-color: #ffffff;
+		text-align: center;
+		padding-top: 25%;
+		box-shadow: 0 30px 50px rgba(166, 166, 166, 0.4);
+		background-color: #ffffff;
+		margin-bottom: 50px;
+	}
+	&-icon {
+		margin-bottom: 15px;
+	}
+	&-btn {
+		.btn {
+			background-color: #00c6ff;
+			color: #ffffff;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media only screen  and (max-width : 991px) { 
+	.places {
+		&-item {
+			padding-top: 10%;
+			margin: auto;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media only screen  and (min-width : 1824px) {
+	.places {
+		&-item {
+			width: 191px;
+			height: 191px;
+		}
+	}
+}
+

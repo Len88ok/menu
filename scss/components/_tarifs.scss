@@ -1,0 +1,177 @@
+.tarifs {
+	background-color: #f5f5f5;
+	margin-bottom: 60px;
+	&-wrap {
+		height: 100%;
+		text-align: center;
+		box-shadow: -15px 16px 32px rgba(0, 0, 0, 0.09);
+		border-radius: 4px;
+		border: 1px solid #f6f6f6;
+		background-color: #ffffff;
+		padding-bottom: 20px;
+		margin-top: 100px;
+		&.lite {
+			.tarifs-header {
+				background-image: linear-gradient(to right, #ff9600 0%, #ffe404 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
+			}
+			.tarifs-action{
+				.btn {
+					background: linear-gradient(to right, #ff9600 0%, #ffe404 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}			
+			.tarifs-btn{
+				.btn {
+					background: linear-gradient(to right, #ff9600 0%, #ffe404 100%);
+					color: #ffffff;
+				}
+			}	
+		}
+		&.basic {
+			margin-top: 30px;
+			padding-bottom: 50px;
+			.tarifs-header {
+				background-image: linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
+			}
+			.tarifs-action{
+				.btn {
+					background-image: linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}			
+			.tarifs-btn{
+				.btn {
+					background-image: linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
+					color: #ffffff;
+				}
+			}
+		}
+		&.standart {
+			.tarifs-header {
+				background-image: linear-gradient(to right, #8a00ff 0%, #e400ff 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
+			}
+			.tarifs-action{
+				.btn {
+					background: linear-gradient(to right, #8a00ff 0%, #e400ff 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}			
+			.tarifs-btn{
+				.btn {
+					background: linear-gradient(to right, #8a00ff 0%, #e400ff 100%);
+					color: #ffffff;
+				}
+			}
+		}
+	}
+	&-header {
+		border-radius: 4px 4px 0 0;
+		padding: 40px 0 20px;
+		color: #ffffff;
+		position: relative;
+	}
+	&-content {
+		padding: 50px 40px 20px;
+	}
+	&-name {
+		font-size: 40px;
+		font-family: 'ProximaNovaThin'; 
+		font-weight: 400; 
+	}
+	&-price {
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 1em;
+		&-number {
+			font-size: 60px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+	&-details {
+		margin-bottom: 40px;
+		&-number {
+			color: #00c6ff;
+			font-size: 30px;
+			font-weight: 400;
+			text-transform: uppercase;
+			display: block;
+		}
+	}
+	&-options {
+		&-list {
+			text-align: left;
+		}
+		&-item {
+			padding-left: 20px;
+			position: relative;
+			margin-bottom: 20px;
+			span {
+				color: #00c6ff;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				left: -10px;
+				top: 10px;
+				width: 10px;
+				height: 10px;
+				background-image: url('../images/list.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				-webkit-background-size: cover; 
+				 -o-background-size: cover; 
+				 background-size: cover;  
+			}
+		}
+	}
+	&-action {
+			position: absolute;
+			bottom: -20px;	
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #FFF;
+		.btn {
+			border: none;		 
+		}
+	}
+	.tarifs-btn{
+		.btn {
+			border: none;		
+		}
+	}
+}
+
+@media only screen  and (max-width : 991px) { 
+	.tarifs {
+		margin-bottom: 20px;
+		&-wrap {
+			margin-top: 30px;
+		}
+		&-price {
+			&-number {
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+@media only screen  and (min-width : 1824px) {
+	.tarifs {
+		&-price {
+			font-size: 22px;
+			&-number {
+				font-size: 90px;
+			}
+		}
+		&-details {
+			&-number {
+				font-size: 50px;
+			}
+		}
+	}
+}

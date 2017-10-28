@@ -1,0 +1,110 @@
+.feedback {
+	background-image: url('../images/bg-form.png');
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	form {
+		width: 70%;
+		margin: auto;
+	}
+	.form-control{
+		height: 74px;
+		box-shadow: -2px 2px 3px 1px rgba(0, 31, 54, 0.28);
+		border-radius: 4px;
+		&:focus {
+			box-shadow: -20px 21px 30px 2px rgba(0, 0, 0, 0.16);
+		}
+	}
+	.form-control,
+	.form-group label,
+	input {
+	   transition: 300ms cubic-bezier(.4, 0, .2, 1);
+	   -webkit-transition: 300ms cubic-bezier(.4, 0, .2, 1);
+	   -ms-transition: 300ms cubic-bezier(.4, 0, .2, 1);
+	}
+	.form-group {
+		position: relative;
+		margin-bottom: 30px;
+	}
+	.form-group label {
+	   position: absolute;
+	   top: 50%;
+	   transform: translateY(-50%);
+	   left: 10px;
+	   z-index: 2;
+	   cursor: pointer;
+	   font-size: 18px;
+	   font-weight: 400;
+	   color: #000000;
+	}
+	select.form-control {
+		height: 74px !important;
+		color: #000000;
+		font-size: 18px;
+		appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+	}
+	.icon-required {
+		position: absolute;
+		color: #ff8f00;
+		top: 32px;
+		right: 10px;
+		font-size: 24px;
+		line-height: 1;
+		vertical-align: middle;
+		&.caret {
+			right: 13px;
+			top: 32px;
+			font-size: 12px;
+		}
+	}
+	button {
+		width: 100%;
+		background-color: #00c6ff;
+		background-image: linear-gradient(to right, #ffe404 0%, #ff9600 100%);
+		height: 73px;
+		border: none;
+		color: #ffffff;
+	}
+}
+
+@media only screen  and (max-width : 991px) {
+	.form-row>.col, .form-row>[class*=col-] {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.form-row {
+		padding: 0 5px;
+	}
+	.feedback {
+		form {
+			width: 100%;
+		}
+		.form-control{
+			height: 54px;
+			padding: 5px 10px; 
+		}
+		.form-group {
+			margin-bottom: 15px;
+		}
+		.form-group label {
+		   left: 15px;
+		}
+		select.form-control {
+			height: 54px !important;
+		}
+		.icon-required {
+			top: 22px;
+			&.caret {
+				right: 10px;
+				top: 22px;
+			}
+		}
+		button {
+			height: 54px;
+		}
+	}
+}

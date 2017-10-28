@@ -1,0 +1,8 @@
+.smartphone-menu-item {
+  max-width: 250px; }
+  .smartphone-menu-item img {
+    width: 100%; }
+
+@media only screen and (min-width: 1824px) {
+  .smartphone-menu-item {
+    max-width: 281px; } }

@@ -1,0 +1,82 @@
+header{
+	position: relative
+}
+.header-info {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	&-item {
+		display: inline-block;
+		&:first-child {
+			margin-right: 120px;
+		}
+		&:last-child {
+			margin-left: 60px;
+		}
+	}
+	&-lang {
+		span {
+			margin-right: 5px;
+			&:hover {
+				color: #00c6ff;
+			}
+		}
+	}
+	&-phone {
+		.info-phone-icon {
+			margin-right: 5px;
+		}
+	}
+	&-call a {
+		color: #00c6ff;
+		font-weight: 300;
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #000000;
+	position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after,
+.navbar-light .navbar-nav .nav-link:focus:after,
+.navbar-light .navbar-nav .nav-link:active:after,
+.navbar-light .navbar-nav .nav-link.active:after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	left: 5px;
+	bottom: 0;
+	width: 60%;
+	height: 5px;
+	background: #00c6ff;
+}
+
+@media only screen  and (max-width : 991px) { 
+	.header-info {
+		position: relative;
+		right: auto;
+		top: 0;
+		transform: translateY(0);
+		text-align: center;
+		&-item {
+			margin-bottom: 10px;
+			&:first-child {
+				margin-right: 20px;
+			}
+			&:last-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+
+@media only screen  and (min-width : 1824px) { 
+ .navbar-brand{
+		margin-right: 5rem;
+ }
+}

@@ -1,0 +1,61 @@
+.light-package {
+	background-image: url('../images/intouch-lite.png');
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	  -o-background-size: 100%;
+	  background-size: 100%;  
+	&-proposition {
+		padding: 2% 0;
+		span {
+			display: inline-block;
+			color: #2b2b2b;
+			font-size: 36px;
+			font-weight: 400;
+			vertical-align: bottom;
+			padding-bottom: 35px;
+		}
+	}
+	&-icon {
+		margin-bottom: 20px;
+		height: 57px;
+	}
+	&-info {
+		a {
+			color: #00c6ff;
+		}
+		margin-bottom: 70px;
+	}
+	&-btn {
+		.btn {
+	    padding: .75rem 1.5rem;
+			color: #ffffff;
+			border: none;
+			box-shadow: none;
+			outline: none;
+			text-transform: uppercase;
+			background-color: #00c6ff;
+			background-image: linear-gradient(to right, #04fcff 0%, #00b5ff 100%);
+		}
+	}
+}
+
+@media only screen  and (max-width : 991px) { 
+	.light-package {
+		&-proposition {
+			img {
+				width: 100px;
+			}
+			span {
+				font-size: 20px;
+			}
+		}
+		&-icon {
+			margin-bottom: 10px;
+		}
+		&-info {
+			margin-bottom: 20px;
+		}
+	}
+}
+

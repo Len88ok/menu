@@ -1,0 +1,48 @@
+.tablet-menu {
+	position: relative;
+	padding-bottom: 150px;
+	background-image: url('../images/bg-yellow.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	-webkit-background-size: cover; 
+	  -o-background-size: cover; 
+	  background-size: cover;   
+	img {
+		width: 100%;
+	}
+	&-img	{
+		position: relative;
+	}
+	&-heading {
+		position: absolute;
+		right: 35px;
+		top: 0;
+		font-size: 30px;
+		text-transform: uppercase;
+		font-weight: 300;
+		span {
+			font-weight: 700;
+		}		
+	}
+}
+
+@media only screen  and (max-width : 991px) {
+	.tablet-menu {
+		padding-bottom: 80px;
+		padding-top: 80px;
+		&-heading {
+			right: 0;
+			top: -60px;
+			font-size: 20px;
+		}
+	}
+}
+
+@media only screen  and (min-width : 1824px) {
+	.tablet-menu {
+		padding-bottom: 200px;
+		&-heading {
+			font-size: 36px;
+		}
+	}
+}

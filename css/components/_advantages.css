@@ -1,0 +1,33 @@
+.advantages-banner {
+  min-height: 600px;
+  background-image: url("../images/bg-top.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+  position: relative; }
+  .advantages-banner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: -1; }
+  .advantages-banner-content {
+    padding-top: 35%; }
+  .advantages-banner-title {
+    color: #ffffff;
+    font-family: "ProximaNova";
+    font-size: 50px;
+    text-transform: uppercase; }
+
+@media only screen and (min-width: 1824px) {
+  .advantages-banner {
+    min-height: 800px; }
+    .advantages-banner-title {
+      font-size: 70px; } }

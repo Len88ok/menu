@@ -11,6 +11,7 @@
 		padding-bottom: 20px;
 		margin-top: 100px;
 		&.lite {
+			height: 1400px;
 			.tarifs-header {
 				background-image: linear-gradient(to right, #ff9600 0%, #ffe404 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
 			}
@@ -29,6 +30,7 @@
 			}	
 		}
 		&.basic {
+			height: 1470px;
 			margin-top: 30px;
 			padding-bottom: 50px;
 			.tarifs-header {
@@ -49,6 +51,7 @@
 			}
 		}
 		&.standart {
+			height: 1400px;
 			.tarifs-header {
 				background-image: linear-gradient(to right, #8a00ff 0%, #e400ff 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
 			}
@@ -151,6 +154,15 @@
 		margin-bottom: 20px;
 		&-wrap {
 			margin-top: 30px;
+			&.lite {
+				height: auto;
+			}
+			&.basic {
+				height: auto;
+			}
+			&.standart {
+				height: auto;
+			}
 		}
 		&-price {
 			&-number {

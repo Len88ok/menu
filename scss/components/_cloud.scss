@@ -28,9 +28,6 @@
 	.cloud {
 		min-height: 100%;
 		text-align: center;
-		-webkit-background-size: 0;
-		 -o-background-size: 0;
-		 background-size: 0; 
 		&-content {
 			padding-top: 0;
 		}
@@ -39,7 +36,13 @@
 		}
 	}
 }
-
+@media only screen  and (max-width : 767px) { 
+	.cloud {
+		-webkit-background-size: 0;
+		 -o-background-size: 0;
+		 background-size: 0; 
+	}
+}
 @media only screen  and (min-width : 1824px) {
 	.cloud {
 		min-height: 750px; 

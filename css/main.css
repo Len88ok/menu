@@ -105,7 +105,8 @@ header {
       .header-info-item:first-child {
         margin-right: 20px; }
       .header-info-item:last-child {
-        margin-left: 0; }
+        margin-left: 0;
+        display: block; }
   .navbar-nav .nav-link {
     padding-left: 5px;
     padding-right: 5px; } }
@@ -587,25 +588,28 @@ header {
     background-color: #ffffff;
     padding-bottom: 20px;
     margin-top: 100px; }
-    .tarifs-wrap.lite .tarifs-header {
-      background-image: -webkit-gradient(linear, left top, right top, from(#ff9600), to(#ffe404)), -webkit-gradient(linear, left top, right top, from(#00b5ff), to(#04fcff));
-      background-image: -webkit-linear-gradient(left, #ff9600 0%, #ffe404 100%), -webkit-linear-gradient(left, #00b5ff 0%, #04fcff 100%);
-      background-image: -o-linear-gradient(left, #ff9600 0%, #ffe404 100%), -o-linear-gradient(left, #00b5ff 0%, #04fcff 100%);
-      background-image: linear-gradient(to right, #ff9600 0%, #ffe404 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%); }
-    .tarifs-wrap.lite .tarifs-action .btn {
-      background: -webkit-gradient(linear, left top, right top, from(#ff9600), to(#ffe404));
-      background: -webkit-linear-gradient(left, #ff9600 0%, #ffe404 100%);
-      background: -o-linear-gradient(left, #ff9600 0%, #ffe404 100%);
-      background: linear-gradient(to right, #ff9600 0%, #ffe404 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    .tarifs-wrap.lite .tarifs-btn .btn {
-      background: -webkit-gradient(linear, left top, right top, from(#ff9600), to(#ffe404));
-      background: -webkit-linear-gradient(left, #ff9600 0%, #ffe404 100%);
-      background: -o-linear-gradient(left, #ff9600 0%, #ffe404 100%);
-      background: linear-gradient(to right, #ff9600 0%, #ffe404 100%);
-      color: #ffffff; }
+    .tarifs-wrap.lite {
+      height: 1400px; }
+      .tarifs-wrap.lite .tarifs-header {
+        background-image: -webkit-gradient(linear, left top, right top, from(#ff9600), to(#ffe404)), -webkit-gradient(linear, left top, right top, from(#00b5ff), to(#04fcff));
+        background-image: -webkit-linear-gradient(left, #ff9600 0%, #ffe404 100%), -webkit-linear-gradient(left, #00b5ff 0%, #04fcff 100%);
+        background-image: -o-linear-gradient(left, #ff9600 0%, #ffe404 100%), -o-linear-gradient(left, #00b5ff 0%, #04fcff 100%);
+        background-image: linear-gradient(to right, #ff9600 0%, #ffe404 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%); }
+      .tarifs-wrap.lite .tarifs-action .btn {
+        background: -webkit-gradient(linear, left top, right top, from(#ff9600), to(#ffe404));
+        background: -webkit-linear-gradient(left, #ff9600 0%, #ffe404 100%);
+        background: -o-linear-gradient(left, #ff9600 0%, #ffe404 100%);
+        background: linear-gradient(to right, #ff9600 0%, #ffe404 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .tarifs-wrap.lite .tarifs-btn .btn {
+        background: -webkit-gradient(linear, left top, right top, from(#ff9600), to(#ffe404));
+        background: -webkit-linear-gradient(left, #ff9600 0%, #ffe404 100%);
+        background: -o-linear-gradient(left, #ff9600 0%, #ffe404 100%);
+        background: linear-gradient(to right, #ff9600 0%, #ffe404 100%);
+        color: #ffffff; }
     .tarifs-wrap.basic {
+      height: 1470px;
       margin-top: 30px;
       padding-bottom: 50px; }
       .tarifs-wrap.basic .tarifs-header {
@@ -626,24 +630,26 @@ header {
         background-image: -o-linear-gradient(left, #00b5ff 0%, #04fcff 100%);
         background-image: linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
         color: #ffffff; }
-    .tarifs-wrap.standart .tarifs-header {
-      background-image: -webkit-gradient(linear, left top, right top, from(#8a00ff), to(#e400ff)), -webkit-gradient(linear, left top, right top, from(#00b5ff), to(#04fcff));
-      background-image: -webkit-linear-gradient(left, #8a00ff 0%, #e400ff 100%), -webkit-linear-gradient(left, #00b5ff 0%, #04fcff 100%);
-      background-image: -o-linear-gradient(left, #8a00ff 0%, #e400ff 100%), -o-linear-gradient(left, #00b5ff 0%, #04fcff 100%);
-      background-image: linear-gradient(to right, #8a00ff 0%, #e400ff 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%); }
-    .tarifs-wrap.standart .tarifs-action .btn {
-      background: -webkit-gradient(linear, left top, right top, from(#8a00ff), to(#e400ff));
-      background: -webkit-linear-gradient(left, #8a00ff 0%, #e400ff 100%);
-      background: -o-linear-gradient(left, #8a00ff 0%, #e400ff 100%);
-      background: linear-gradient(to right, #8a00ff 0%, #e400ff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    .tarifs-wrap.standart .tarifs-btn .btn {
-      background: -webkit-gradient(linear, left top, right top, from(#8a00ff), to(#e400ff));
-      background: -webkit-linear-gradient(left, #8a00ff 0%, #e400ff 100%);
-      background: -o-linear-gradient(left, #8a00ff 0%, #e400ff 100%);
-      background: linear-gradient(to right, #8a00ff 0%, #e400ff 100%);
-      color: #ffffff; }
+    .tarifs-wrap.standart {
+      height: 1400px; }
+      .tarifs-wrap.standart .tarifs-header {
+        background-image: -webkit-gradient(linear, left top, right top, from(#8a00ff), to(#e400ff)), -webkit-gradient(linear, left top, right top, from(#00b5ff), to(#04fcff));
+        background-image: -webkit-linear-gradient(left, #8a00ff 0%, #e400ff 100%), -webkit-linear-gradient(left, #00b5ff 0%, #04fcff 100%);
+        background-image: -o-linear-gradient(left, #8a00ff 0%, #e400ff 100%), -o-linear-gradient(left, #00b5ff 0%, #04fcff 100%);
+        background-image: linear-gradient(to right, #8a00ff 0%, #e400ff 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%); }
+      .tarifs-wrap.standart .tarifs-action .btn {
+        background: -webkit-gradient(linear, left top, right top, from(#8a00ff), to(#e400ff));
+        background: -webkit-linear-gradient(left, #8a00ff 0%, #e400ff 100%);
+        background: -o-linear-gradient(left, #8a00ff 0%, #e400ff 100%);
+        background: linear-gradient(to right, #8a00ff 0%, #e400ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .tarifs-wrap.standart .tarifs-btn .btn {
+        background: -webkit-gradient(linear, left top, right top, from(#8a00ff), to(#e400ff));
+        background: -webkit-linear-gradient(left, #8a00ff 0%, #e400ff 100%);
+        background: -o-linear-gradient(left, #8a00ff 0%, #e400ff 100%);
+        background: linear-gradient(to right, #8a00ff 0%, #e400ff 100%);
+        color: #ffffff; }
   .tarifs-header {
     border-radius: 4px 4px 0 0;
     padding: 40px 0 20px;
@@ -711,6 +717,12 @@ header {
     margin-bottom: 20px; }
     .tarifs-wrap {
       margin-top: 30px; }
+      .tarifs-wrap.lite {
+        height: auto; }
+      .tarifs-wrap.basic {
+        height: auto; }
+      .tarifs-wrap.standart {
+        height: auto; }
     .tarifs-price-number {
       font-size: 40px; } }
 
@@ -850,14 +862,17 @@ header {
 @media only screen and (max-width: 991px) {
   .cloud {
     min-height: 100%;
-    text-align: center;
-    -webkit-background-size: 0;
-    -o-background-size: 0;
-    background-size: 0; }
+    text-align: center; }
     .cloud-content {
       padding-top: 0; }
     .cloud-heading {
       font-size: 20px; } }
+
+@media only screen and (max-width: 767px) {
+  .cloud {
+    -webkit-background-size: 0;
+    -o-background-size: 0;
+    background-size: 0; } }
 
 @media only screen and (min-width: 1824px) {
   .cloud {
@@ -1033,7 +1048,12 @@ header {
   .footer-item.contacts {
     margin-bottom: 20px; }
   .footer-contacts-item {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .footer-btn {
+    text-align: center; }
+    .footer-btn .btn {
+      width: 60%;
+      margin: 20px auto; } }
 
 @media only screen and (min-width: 1824px) {
   .footer {

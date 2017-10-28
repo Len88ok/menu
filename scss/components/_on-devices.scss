@@ -9,14 +9,19 @@
 	}
 }
 
-@media only screen  and (max-width : 991px) { 
+@media only screen  and (max-width : 1169px) {
 	.on-devices {
 		min-height: auto;
-		img {
-			width: 100%;
-		} 
+		&-view {
+			width: 50%;
+			margin: auto;
+			img {
+				width: 100%;
+			}
+		}
 		&-caption {
-			padding-left: 25%;
+			padding-left: 0;
+			text-align: center;
 		}
 	}
 }

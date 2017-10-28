@@ -1,0 +1,79 @@
+header {
+  position: relative; }
+
+.navbar .back-call {
+  color: #00c6ff;
+  font-weight: 300;
+  text-decoration: underline;
+  text-transform: uppercase;
+  display: none; }
+
+.header-info {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .header-info-item {
+    display: inline-block; }
+    .header-info-item:first-child {
+      margin-right: 120px; }
+    .header-info-item:last-child {
+      margin-left: 60px; }
+  .header-info-lang span {
+    margin-right: 5px; }
+    .header-info-lang span:hover {
+      color: #00c6ff; }
+  .header-info-phone .info-phone-icon {
+    margin-right: 5px; }
+  .header-info-call a {
+    color: #00c6ff;
+    font-weight: 300;
+    text-decoration: underline;
+    text-transform: uppercase; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000000;
+  position: relative; }
+
+.navbar-light .navbar-nav .nav-link:hover:after,
+.navbar-light .navbar-nav .nav-link:focus:after,
+.navbar-light .navbar-nav .nav-link:active:after,
+.navbar-light .navbar-nav .nav-link.active:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 5px;
+  bottom: 0;
+  width: 60%;
+  height: 5px;
+  background: #00c6ff; }
+
+@media only screen and (max-width: 991px) {
+  .navbar .back-call {
+    display: block; }
+  .header-info {
+    position: relative;
+    right: auto;
+    top: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    text-align: center; }
+    .header-info-item {
+      margin-bottom: 10px; }
+      .header-info-item:first-child {
+        margin-right: 20px; }
+      .header-info-item:last-child {
+        margin-left: 0;
+        display: block; }
+    .header-info-call {
+      display: none; }
+  .navbar-nav .nav-link {
+    padding-left: 5px;
+    padding-right: 5px; } }
+
+@media only screen and (min-width: 1824px) {
+  .navbar-brand {
+    margin-right: 5rem; } }

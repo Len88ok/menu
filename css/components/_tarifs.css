@@ -1,9 +1,129 @@
 .tarifs {
   background-color: #f5f5f5; }
   .tarifs-wrap {
+    height: 100%;
     text-align: center;
-    -webkit-box-shadow: -15px 16px 32px rgba(0, 0, 0, 0.09);
     box-shadow: -15px 16px 32px rgba(0, 0, 0, 0.09);
     border-radius: 4px;
     border: 1px solid #f6f6f6;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    margin-top: 100px; }
+    .tarifs-wrap.lite {
+      height: 1400px; }
+      .tarifs-wrap.lite .tarifs-header {
+        background-image: linear-gradient(to right, #ff9600 0%, #ffe404 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%); }
+      .tarifs-wrap.lite .tarifs-action .btn {
+        background: linear-gradient(to right, #ff9600 0%, #ffe404 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .tarifs-wrap.lite .tarifs-btn .btn {
+        background: linear-gradient(to right, #ff9600 0%, #ffe404 100%);
+        color: #ffffff; }
+    .tarifs-wrap.basic {
+      height: 1470px;
+      margin-top: 30px;
+      padding-bottom: 50px; }
+      .tarifs-wrap.basic .tarifs-header {
+        background-image: linear-gradient(to right, #00b5ff 0%, #04fcff 100%); }
+      .tarifs-wrap.basic .tarifs-action .btn {
+        background-image: linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .tarifs-wrap.basic .tarifs-btn .btn {
+        background-image: linear-gradient(to right, #00b5ff 0%, #04fcff 100%);
+        color: #ffffff; }
+    .tarifs-wrap.standart {
+      height: 1400px; }
+      .tarifs-wrap.standart .tarifs-header {
+        background-image: linear-gradient(to right, #8a00ff 0%, #e400ff 100%), linear-gradient(to right, #00b5ff 0%, #04fcff 100%); }
+      .tarifs-wrap.standart .tarifs-action .btn {
+        background: linear-gradient(to right, #8a00ff 0%, #e400ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .tarifs-wrap.standart .tarifs-btn .btn {
+        background: linear-gradient(to right, #8a00ff 0%, #e400ff 100%);
+        color: #ffffff; }
+  .tarifs-header {
+    border-radius: 4px 4px 0 0;
+    padding: 40px 0 20px;
+    color: #ffffff;
+    position: relative; }
+  .tarifs-content {
+    padding: 50px 40px 20px; }
+  .tarifs-name {
+    font-size: 40px;
+    font-family: 'ProximaNovaThin';
+    font-weight: 400; }
+  .tarifs-price {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 1em; }
+    .tarifs-price-number {
+      font-size: 60px;
+      font-weight: 400;
+      text-transform: uppercase; }
+  .tarifs-details {
+    margin-bottom: 40px; }
+    .tarifs-details-number {
+      color: #00c6ff;
+      font-size: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: block; }
+  .tarifs-options-list {
+    text-align: left; }
+  .tarifs-options-item {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 20px; }
+    .tarifs-options-item span {
+      color: #00c6ff; }
+    .tarifs-options-item:before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 10px;
+      width: 10px;
+      height: 10px;
+      background-image: url("../images/list.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+  .tarifs-action {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #FFF; }
+    .tarifs-action .btn {
+      border: none; }
+  .tarifs .tarifs-btn .btn {
+    border: none; }
+
+@media only screen and (max-width: 991px) {
+  .tarifs {
+    margin-bottom: 20px; }
+    .tarifs-wrap {
+      margin-top: 30px; }
+      .tarifs-wrap.lite {
+        height: auto; }
+      .tarifs-wrap.basic {
+        height: auto; }
+      .tarifs-wrap.standart {
+        height: auto; }
+    .tarifs-price-number {
+      font-size: 40px; } }
+
+@media only screen and (min-width: 1824px) {
+  .tarifs-price {
+    font-size: 22px; }
+    .tarifs-price-number {
+      font-size: 90px; }
+  .tarifs-details-number {
+    font-size: 50px; } }

@@ -26,12 +26,19 @@
 	}
 }
 
+@media only screen  and (max-width : 1169px) {
+		.tablet-menu {
+		&-heading {
+			right: 0;
+		}
+	}
+}
+
 @media only screen  and (max-width : 991px) {
 	.tablet-menu {
 		padding-bottom: 80px;
 		padding-top: 80px;
 		&-heading {
-			right: 0;
 			top: -60px;
 			font-size: 20px;
 		}

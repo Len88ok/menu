@@ -104,6 +104,14 @@
 	}
 }
 
+@media only screen  and (max-width : 1169px) {
+	.service-instructions {
+		&-title {
+			font-size: 18px;
+		}
+	}
+}
+
 @media only screen  and (max-width : 991px) {
 	.service-instructions {
 		&-wrap {
@@ -124,9 +132,7 @@
 				bottom: auto;
 			}
 			.service-instructions-img {
-				float: none;
-				margin-bottom: 0;
-				margin: auto;
+				display: none;
 			}
 		}
 		&-right {
@@ -136,9 +142,7 @@
 				left: auto;
 			}
 			.service-instructions-img {
-				float: none;
-				margin-bottom: 0;
-				margin: auto;
+				display: none;
 			}
 		}
 	}

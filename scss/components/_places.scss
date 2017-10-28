@@ -10,6 +10,9 @@
 		background-color: #ffffff;
 		margin-bottom: 50px;
 	}
+	&-heading {
+		font-size: 25px;
+	}
 	&-icon {
 		margin-bottom: 15px;
 	}
@@ -25,9 +28,21 @@
 @media only screen  and (max-width : 991px) { 
 	.places {
 		&-item {
-			padding-top: 10%;
-			margin: auto;
+			margin-left: auto;
+			margin-right: auto;
 			margin-bottom: 20px;
+			padding-top: 20px;
+		}
+		&-heading {
+			font-size: 20px;
+		}
+		&-icon {
+			width: 100px;
+			height: 100px;
+			margin: 0 auto 5px;
+			img {
+				width: 100%;
+			}
 		}
 	}
 }

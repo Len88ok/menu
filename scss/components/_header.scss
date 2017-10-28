@@ -1,6 +1,15 @@
 header{
 	position: relative
 }
+.navbar {
+	.back-call {
+		color: #00c6ff !important;
+		font-weight: 300;
+		text-decoration: underline;
+		text-transform: uppercase;
+		display: none;
+	}
+}
 .header-info {
 	position: absolute;
 	right: 0;
@@ -55,11 +64,23 @@ header{
 	background: #00c6ff;
 }
 
+.navbar-light .navbar-nav .nav-link.back-call:hover:after,
+.navbar-light .navbar-nav .nav-link.back-call:focus:after,
+.navbar-light .navbar-nav .nav-link.back-call:active:after,
+.navbar-light .navbar-nav .nav-link.back-call.active:after {
+	display: none;
+}
+
 @media only screen  and (max-width : 991px) { 
+	.navbar {
+		.back-call {
+			display: block;
+		}
+	}
 	.header-info {
 		position: relative;
 		right: auto;
-		top: 0;
+		top: 10px;
 		transform: translateY(0);
 		text-align: center;
 		&-item {
@@ -71,6 +92,9 @@ header{
 				margin-left: 0;
 				display: block;
 			}
+		}
+		&-call {
+			display: none;
 		}
 	}
 	.navbar-nav .nav-link {

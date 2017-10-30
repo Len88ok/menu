@@ -21,8 +21,10 @@ ul, ol {
 section {
   padding: 60px 0; }
 
-a:hover {
+a:hover,
+a:focus {
   color: #ffffff;
+  outline: none;
   text-decoration: underline; }
 
 @media (min-width: 1600px) {
@@ -725,8 +727,9 @@ header {
 #standartModal .close {
   position: absolute;
   top: 5px;
-  right: 5px;
+  right: 10px;
   z-index: 10;
+  font-size: 35px;
   color: #ffffff;
   outline: 0;
   box-shadow: none;
@@ -1044,12 +1047,18 @@ header {
     border: none;
     color: #ffffff; }
 
-#connectModal .modal-header .close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  outline: none;
-  box-shadow: none; }
+#connectModal .modal-header {
+  padding: 0 10px;
+  border-bottom: none; }
+  #connectModal .modal-header .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    outline: none;
+    box-shadow: none; }
+
+#connectModal .modal-body {
+  padding: 0 10px; }
 
 #connectModal .modal-dialog {
   max-width: 90%; }
@@ -1076,7 +1085,7 @@ header {
       height: 54px;
       padding: 5px 10px; }
     .feedback .form-group {
-      margin-bottom: 15px; }
+      margin-bottom: 10px; }
     .feedback .form-group label {
       left: 15px; }
     .feedback select.form-control {
@@ -1086,8 +1095,11 @@ header {
       .feedback .icon-required.caret {
         right: 10px;
         top: 22px; }
-    .feedback button {
-      height: 54px; } }
+    .feedback .btn {
+      height: 54px; }
+    .feedback .section-title {
+      margin-bottom: 10px;
+      font-size: 20px; } }
 
 .footer {
   background-color: #313131;

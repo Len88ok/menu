@@ -75,6 +75,8 @@
 #connectModal {
 	.modal {
 		&-header {
+			padding: 0 10px;
+			border-bottom: none;
 			.close {
 				position: absolute;
 				top: 15px;
@@ -82,6 +84,9 @@
 				outline: none;
 				box-shadow: none;
 			}
+		}
+		&-body {
+			padding: 0 10px;
 		}
 		&-dialog {
 			max-width: 90%;
@@ -120,7 +125,7 @@
 			padding: 5px 10px; 
 		}
 		.form-group {
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 		}
 		.form-group label {
 		   left: 15px;
@@ -135,8 +140,12 @@
 				top: 22px;
 			}
 		}
-		button {
+		.btn {
 			height: 54px;
+		}
+		.section-title {
+			margin-bottom: 10px;
+			font-size: 20px;
 		}
 	}
 }

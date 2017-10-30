@@ -1,5 +1,12 @@
 .tarifs {
 	background-color: #f5f5f5;
+	&-slider {
+		&-item {
+			display: inline-block;
+			width: 32%;
+			vertical-align: top;
+		}
+	}
 	&-wrap {
 		height: 100%;
 		text-align: center;
@@ -138,13 +145,20 @@
 			transform: translateX(-50%);
 			background-color: #FFF;
 		.btn {
-			border: none;		 
+			border: none;
+			outline: none;
+			box-shadow: none;		 
 		}
 	}
-	.tarifs-btn{
+	&-btn{
 		.btn {
-			border: none;		
+			border: none;
+			outline: none;
+			box-shadow: none;		
 		}
+	}
+	.btn.focus, .btn:focus {
+		box-shadow: none;
 	}
 }
 
@@ -178,6 +192,18 @@
 				height: auto;
 			}
 		}
+		&-details {
+			.col-xs-6 {
+				width: 49%;
+				text-align: center;
+			}	
+		}
+		&-btn{
+			.btn {
+				width: 60%;
+				margin: auto;		
+			}
+		}
 		&-options {
 			&-item {
 				margin-bottom: 20px;
@@ -188,7 +214,9 @@
 				font-size: 40px;
 			}
 		}
-		.slick-prev {
+	}
+	.prices-tarifs {
+	.slick-prev {
 			left: 0;
 			right: auto;
 		}

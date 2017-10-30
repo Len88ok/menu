@@ -10,12 +10,17 @@ header{
 		&-header {
 			.close {
 				color: #ffffff;
+				outline: none;
+				box-shadow: none;
 			}			
 		}	
 		&-body {
 			padding: 50px 0;
 		}	
 	}	
+}
+.collapse.show {
+    padding-top: 15px;
 }
 .header-info {
 	position: absolute;
@@ -24,9 +29,6 @@ header{
 	transform: translateY(-50%);
 	&-item {
 		display: inline-block;
-		&:first-child {
-			margin-right: 120px;
-		}
 		&:last-child {
 			margin-left: 60px;
 		}
@@ -81,7 +83,7 @@ header{
 @media only screen  and (max-width : 991px) { 
 	.header-info {
 		position: absolute;
-		right: 75px;
+		right: 20px;
 		top: 22px;
 		transform: translateY(0);
 		text-align: center;
@@ -90,13 +92,6 @@ header{
 		}
 		&-item {
 			margin-bottom: 10px;
-			&:first-child {
-				margin-right: 0;
-			}
-			&:last-child {
-				margin-left: 0;
-				display: block;
-			}
 		}
 		&-call {
 			display: none;

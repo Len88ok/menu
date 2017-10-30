@@ -66,11 +66,6 @@
 								<span>+7 (495) 205 64 63</span>
 							</div>
 						</li>
-						<li class="header-info-item">
-							<div class="header-info-call">
-								<a href="#">Заказать обратный звонок</a>
-							</div>
-						</li>
 					</ul>
 				</div>			
 			</header>
@@ -126,7 +121,7 @@
 										<span class="about-menu-item-text">Электронное меню</span>
 									</div>
 									<div class="about-menu-item-caption">
-										Привычное меню в электронном виде с оформлением под Ваш бренд
+										Привычное меню в электронном виде  с оформлением под Ваш бренд
 									</div>
 								</div>
 							</div>
@@ -139,7 +134,7 @@
 										<span class="about-menu-item-text">Ознакомление  с меню</span>
 									</div>
 									<div class="about-menu-item-caption">
-										Возможность ознакомиться с меню, не дожидаясь официанта
+										Возможность ознакомиться с меню,  не дожидаясь официанта
 									</div>
 								</div>
 							</div>
@@ -152,13 +147,12 @@
 										<span class="about-menu-item-text">Вызов официанта</span>
 									</div>
 									<div class="about-menu-item-caption">
-										Вызов официанта за свой стол. Больше не надо звать и искать официанта
+										Вызов официанта за свой стол.  Больше не надо звать и искать официанта
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-6 col-lg-3">
 								<div class="about-menu-item">
-									<div class="about-menu-item-number">04</div>
 									<div class="about-menu-item-heading">
 										<span class="about-menu-item-icon"><img src="images/bill-icon.svg" alt="icon"></span>
 										<span class="about-menu-item-text">Увеличение  среднего чека</span>
@@ -388,7 +382,7 @@
 									<span>руб/мес.</span>
 								</div>
 								<div class="tarifs-action">
-									<a href="#" class="btn"><span>&#8212;</span>Подключить</a>
+									<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
 								</div>
 							</div>
 							<div class="tarifs-content">
@@ -418,7 +412,7 @@
 								</div>
 							</div>
 							<div class="tarifs-btn">
-								<a href="#" class="btn"><span>&#8212;</span>Подключить</a>
+								<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
 							</div>
 						</div>
 					</div>
@@ -432,7 +426,7 @@
 									<span>руб/мес.</span>
 								</div>
 								<div class="tarifs-action">
-									<a href="#" class="btn"><span>&#8212;</span>Подключить</a>
+									<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
 								</div>
 							</div>
 							<div class="tarifs-content">
@@ -465,7 +459,7 @@
 								</div>
 							</div>
 							<div class="tarifs-btn">
-								<a href="#" class="btn"><span>&#8212;</span>Подключить</a>
+								<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
 							</div>
 						</div>
 					</div>
@@ -479,7 +473,7 @@
 									<span>руб/мес.</span>
 								</div>
 								<div class="tarifs-action">
-									<a href="#" class="btn"><span>&#8212;</span>Подключить</a>
+									<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
 								</div>
 							</div>
 							<div class="tarifs-content">
@@ -516,7 +510,7 @@
 								</div>
 							</div>
 							<div class="tarifs-btn">
-								<a href="#" class="btn"><span>&#8212;</span>Подключить</a>
+								<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
 							</div>
 						</div>
 					</div>
@@ -656,8 +650,8 @@
 								</div>
 								<nav>
 									<ul class="footer-nav">
-										<li class="footer-nav-item"><a href="#">Как работает </a></li>
-										<li class="footer-nav -item"><a href="#">Цены</a></li>
+										<li class="footer-nav-item"><a href="#howWorks">Как работает </a></li>
+										<li class="footer-nav -item"><a href="prices.html">Цены</a></li>
 									</ul>
 								</nav>
 							</div> 
@@ -715,26 +709,6 @@
   <script type="text/javascript" src="slick-1.8.0/slick/slick.min.js"></script>
   <script>
   $(document).ready(function(){
-  	$('.tarifs-slider').slick({
-  	  unslick: true,
-  	  dots: false,
-  	  arrows: false,
-  	  infinite: false,
-  	  slidesToShow: 3,
-  	  slidesToScroll: 3,
-  	  responsive: [
-  	    {
-  	      breakpoint: 991,
-  	      settings: {
-  	      	unslick: false,
-  	        slidesToShow: 1,
-  	        slidesToScroll: 1,
-  	        arrows: true
-  	      }
-  	    }
-  	  ]
-  	});
-
   	$(function() {
   	   $(".form-group input").focus(function() {
   	      $(this).parent(".form-group").each(function() {

@@ -26,6 +26,9 @@
 	a {
 		color: #ffffff;
 	}
+	.dropdown-menu a {
+		color: #696969;
+	}
 	&-item {
 		position: relative;
 		&:after{
@@ -80,6 +83,9 @@
 
 @media only screen  and (max-width : 991px) {
 	.footer {
+		&-top{
+			padding: 35px 0 0;
+		}
 		&-logo {
 			margin: 20px auto;
 		}
@@ -90,6 +96,9 @@
 			}
 			&.contacts {
 				margin-bottom: 20px;
+			}
+			&.access {
+				display: none;
 			}
 		}
 		&-contacts {

@@ -7,28 +7,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="wrapper">
 		<div class="container">
 			<header>
-				<nav class="navbar navbar-expand-lg navbar-light">
+				<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 				  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				    <div class="navbar-nav">
-						<a class="nav-item nav-link" href="#howWorks">Как работает</a>
-						<a class="nav-item nav-link" href="prices.html">Цены</a>
-						<a class="nav-item nav-link" href="#contactsModal" data-toggle="modal">Контакты</a>
-				    </div>
+					  <ul class="navbar-nav">
+				        <li class="nav-item">
+				          <a class="nav-link" href="#howWorks">Как работает</a>
+				        </li>
+				        <li class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				            Цены
+				          </a>
+				          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				            <a class="dropdown-item" href="#liteModal" data-toggle="modal">Пакет Lite</a>
+				            <a class="dropdown-item" href="#basicModal" data-toggle="modal">Пакет Basic</a>
+				            <a class="dropdown-item" href="#standartModal" data-toggle="modal">Пакет Standart</a>
+				          </div>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="#contactsModal" data-toggle="modal">Контакты</a>
+				        </li>
+				      </ul>
 				  </div>
+				  <div class="header-info">
+					<ul class="header-info-list">
+						<li class="header-info-item">
+							<div class="header-info-lang">
+								<span>En</span>
+								<span>/</span>
+								<span>Ru</span>
+							</div>
+						</li>
+						<li class="header-info-item">
+							<div class="header-info-phone">
+								<span class="info-phone-icon"><img src="images/call.svg" alt="phone-icon"></span>
+								<span>+7 (495) 205 64 63</span>
+							</div>
+						</li>
+					</ul>
+				</div>
 				</nav>
-				<!-- Modal -->
+				<!-- Modal Contacts-->
 				<div class="modal fade" id="contactsModal" tabindex="-1" role="dialog" aria-labelledby="contactsModalLabel" aria-hidden="true">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
@@ -51,23 +79,175 @@
 				    </div>
 				  </div>
 				</div>
-				<div class="header-info">
-					<ul class="header-info-list">
-						<li class="header-info-item">
-							<div class="header-info-lang">
-								<span>En</span>
-								<span>/</span>
-								<span>Ru</span>
-							</div>
-						</li>
-						<li class="header-info-item">
-							<div class="header-info-phone">
-								<span class="info-phone-icon"><img src="images/call.svg" alt="phone-icon"></span>
-								<span>+7 (495) 205 64 63</span>
-							</div>
-						</li>
-					</ul>
-				</div>			
+				<!-- Modal Lite-->
+				<div class="modal fade" id="liteModal" tabindex="-1" role="dialog" 
+				aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          		<span aria-hidden="true">&times;</span>
+				        </button>
+		        		<div class="tarifs-wrap lite">
+		        			<div class="tarifs-header">
+		        				<div class="tarifs-name">Пакет Lite</div>
+		        				<div class="tarifs-price">
+		        					<span>оплата</span>
+		        					<span class="tarifs-price-number">0</span>
+		        					<span>руб/мес.</span>
+		        				</div>
+		        				<div class="tarifs-action">
+		        					<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить сейчас</a>
+		        				</div>
+		        			</div>
+		        			<div class="tarifs-content">
+		        				<div class="tarifs-details">
+		        					<div class="row">
+		        						<div class="col-6">
+		        							<div class="tarifs-year-price">
+		        								<span class="tarifs-details-number">0</span>
+		        								<span>Годовая оплата</span>
+		        							</div>
+		        						</div>
+		        						<div class="col-6">
+		        							<div class="tarifs-discount">
+		        								<span class="tarifs-details-number">100%</span>
+		        								<span> Скидка</span>
+		        							</div>
+		        						</div>
+		        					</div>
+		        				</div>
+		        				<div class="tarifs-options">
+		        					<ul class="tarifs-options-list">
+		        						<li class="tarifs-options-item">Электронное меню в формате веб приложения на домене <span>intouchmenu.com  </span></li>
+		        						<li class="tarifs-options-item">Административная панель управления контентом и меню  </li>
+		        						<li class="tarifs-options-item">Поддержка двух языков (русский, английский)  </li>
+		        						<li class="tarifs-options-item">Хранение данных - 90 дней </li>
+		        					</ul>
+		        				</div>
+		        			</div>
+		        			<div class="tarifs-btn">
+		        				<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
+		        			</div>
+		        		</div>
+				    </div>
+				  </div>
+				</div>		
+				<!-- Modal Basic-->
+				<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" 
+				aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          		<span aria-hidden="true">&times;</span>
+				        </button>
+				      <div class="tarifs-wrap basic">
+				      	<div class="tarifs-header">
+				      		<div class="tarifs-name">Пакет Basic</div>
+				      		<div class="tarifs-price">
+				      			<span>оплата</span>
+				      			<span class="tarifs-price-number">1750</span>
+				      			<span>руб/мес.</span>
+				      		</div>
+				      		<div class="tarifs-action">
+				      			<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить сейчас</a>
+				      		</div>
+				      	</div>
+				      	<div class="tarifs-content">
+				      		<div class="tarifs-details">
+				      			<div class="row">
+				      				<div class="col-6">
+				      					<div class="tarifs-year-price">
+				      						<span class="tarifs-details-number">17 850</span>
+				      						<span>Годовая оплата</span>
+				      					</div>
+				      				</div>
+				      				<div class="col-6">
+				      					<div class="tarifs-discount">
+				      						<span class="tarifs-details-number">15%</span>
+				      						<span> Скидка</span>
+				      					</div>
+				      				</div>
+				      			</div>
+				      		</div>
+				      		<div class="tarifs-options">
+				      			<ul class="tarifs-options-list">
+				      				<li class="tarifs-options-item">Электронное меню веб приложения  на домене <span>intouchmenu.com  </span></li>
+				      				<li class="tarifs-options-item">Административная панель управления контентом и меню  </li>
+				      				<li class="tarifs-options-item">Возможность размещения на собственном домене  </li>
+				      				<li class="tarifs-options-item">Возможность размещения на APP store, Google Play  </li>
+				      				<li class="tarifs-options-item">Электронное меню с возможностью вызова официанта  </li>
+				      				<li class="tarifs-options-item">Приложение официанта с функцией уведомлений  Поддержка двух языков ( русский, английский)  </li>
+				      				<li class="tarifs-options-item">Хранение данных - 365 дней </li>
+				      			</ul>
+				      		</div>
+				      	</div>
+				      	<div class="tarifs-btn">
+				      		<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>	
+				<!-- Modal Standart-->
+				<div class="modal fade" id="standartModal" tabindex="-1" role="dialog" 
+				aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          		<span aria-hidden="true">&times;</span>
+				        </button>
+				        <div class="tarifs-wrap standart">
+				        	<div class="tarifs-header">
+				        		<div class="tarifs-name">Пакет Standart</div>
+				        		<div class="tarifs-price">
+				        			<span>оплата</span>
+				        			<span class="tarifs-price-number">3850</span>
+				        			<span>руб/мес.</span>
+				        		</div>
+				        		<div class="tarifs-action">
+				        			<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить сейчас</a>
+				        		</div>
+				        	</div>
+				        	<div class="tarifs-content">
+				        		<div class="tarifs-details">
+				        			<div class="row">
+				        				<div class="col-6">
+				        					<div class="tarifs-year-price">
+				        						<span class="tarifs-details-number">39 250</span>
+				        						<span>Годовая оплата</span>
+				        					</div>
+				        				</div>
+				        				<div class="col-6">
+				        					<div class="tarifs-discount">
+				        						<span class="tarifs-details-number">100%</span>
+				        						<span> Скидка</span>
+				        					</div>
+				        				</div>
+				        			</div>
+				        		</div>
+				        		<div class="tarifs-options">
+				        			<ul class="tarifs-options-list">
+				        				<li class="tarifs-options-item">Электронное меню веб приложения на домене <span>intouchmenu.com</span>  </li>
+				        				<li class="tarifs-options-item">Административная панель управления контентом и меню  </li>
+				        				<li class="tarifs-options-item">Возможность размещения на собственном домене  </li>
+				        				<li class="tarifs-options-item">Возможность размещения на APP store, Google Play  </li>
+				        				<li class="tarifs-options-item">Электронное меню с возможностью вызова официанта и оформления самостоятельного заказа клиентом и получения бонусных баллов  </li>
+				        				<li class="tarifs-options-item">Приложение официанта с функцией заказа и бонусной программой  </li>
+				        				<li class="tarifs-options-item">Программа лояльности  Функция бронирования столов  Функция отзывов клиента  </li>
+				        				<li class="tarifs-options-item">Функция Доставка/Предзаказ  </li>
+				        				<li class="tarifs-options-item">Поддержка двух языков ( русский, английский)  </li>
+				        				<li class="tarifs-options-item">Интеграция с существующими системами автоматизации (iikoFront,n iikoWaiter, RKeeper)  </li>
+				        				<li class="tarifs-options-item">Хранение данных – 3 года</li>
+				        			</ul>
+				        		</div>
+				        	</div>
+				        	<div class="tarifs-btn">
+				        		<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
+				        	</div>
+				        </div>
+				    </div>
+				  </div>
+				</div>						
 			</header>
 		</div>
 		<main>
@@ -290,20 +470,11 @@
 					</ul>
 				</div>
 			</section>
-		<section class="on-devices">
-			<div class="container">
-				<div class="section-title text-center">МЕНЮ НА УСТРОЙСТВАХ</div>
-				<div class="on-devices-view text-center">
-					<img src="images/bg-menus.png" alt="menus">
-				</div>
-				<div class="on-devices-caption">Электронное меню у гостя</div>
-			</div>
-		</section>
 		<section class="places text-center">
 			<div class="container">
 			<div class="section-title text-center">ГДЕ МОЖНО ПРИМЕНИТЬ</div>
-				<div class="row">
-					<div class="offset-lg-1 col-lg-2">
+				<div class="row justify-content-around">
+					<div class="col-6 offset-lg-1 col-lg-2">
 						<div class="places-item">
 							<div class="places-icon">
 								<img src="images/cafe.svg" alt="icon">
@@ -313,7 +484,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-6 col-lg-2">
 						<div class="places-item">
 							<div class="places-icon">
 								<img src="images/restraunt.svg" alt="icon">
@@ -323,7 +494,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-6 col-lg-2">
 						<div class="places-item">
 							<div class="places-icon">
 								<img src="images/hotel.svg" alt="icon">
@@ -333,7 +504,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-6 col-lg-2">
 						<div class="places-item">
 							<div class="places-icon">
 								<img src="images/beach.svg" alt="icon">
@@ -343,7 +514,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-6 col-lg-2">
 						<div class="places-item">
 							<div class="places-icon">
 								<img src="images/fitness.svg" alt="icon">
@@ -363,8 +534,8 @@
 			<div class="container">
 				<div class="section-title text-center">Как работает меню</div>
 				<div class="how-works-text">
-					<p>Электронное меню можно использовать практически на <span>любых</span> видах смартфонов и планшетов. Формат мобильного приложения позволяет гостям использовать привычный интерфейс своего смартфона.</p>
-					<p>Электронное <span>меню</span> включает информацию о заведении, информацию о персонале, отзывы о блюдах, новости, акции, систему бронирования столиков.</p>
+					<p>Электронное меню можно использовать практически на любых видах смартфонов и планшетов. Формат мобильного приложения позволяет гостям использовать привычный интерфейс своего смартфона.</p>
+					<p>Электронное меню включает информацию о заведении, информацию о персонале, отзывы о блюдах, новости, акции, систему бронирования столиков.</p>
 				</div>
 			</div>
 		</section>
@@ -651,7 +822,16 @@
 								<nav>
 									<ul class="footer-nav">
 										<li class="footer-nav-item"><a href="#howWorks">Как работает </a></li>
-										<li class="footer-nav -item"><a href="prices.html">Цены</a></li>
+										<li class="footer-nav-item dropdown">
+										  <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    Цены
+										  </a>
+										  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										    <a class="dropdown-item" href="#liteModal" data-toggle="modal">Пакет Lite</a>
+										    <a class="dropdown-item" href="#basicModal" data-toggle="modal">Пакет Basic</a>
+										    <a class="dropdown-item" href="#standartModal" data-toggle="modal">Пакет Standart</a>
+										  </div>
+										</li>
 									</ul>
 								</nav>
 							</div> 
@@ -706,7 +886,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha38-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="slick-1.8.0/slick/slick.min.js"></script>
   <script>
   $(document).ready(function(){
   	$(function() {

@@ -1,8 +1,12 @@
 .partners {
 	background-color: #f6f6f6;
+	&-list {
+		width: 80%;
+		margin: auto;
+	}
 	&-item {
 		display: inline-block;
-		width: 32%;
+		width: 49%;
 		text-align: center;
 		padding: 20px;
 		&:hover,
@@ -14,11 +18,19 @@
 			background-position: 0 0;
 			background-size: 100% 100%;
 		}
+		&.keeper {
+			img {
+				width: 180px;
+			}
+		}
 	}
 }
 
 @media only screen  and (max-width : 600px) {
 	.partners {
+		&-list {
+			width: 100%;
+		}
 		&-item {
 			display: block;
 			width: 100%;

@@ -5,6 +5,7 @@
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	position: relative;
 	form {
 		width: 70%;
 		margin: auto;
@@ -61,7 +62,7 @@
 			font-size: 12px;
 		}
 	}
-	button {
+	.btn {
 		width: 100%;
 		background-color: #00c6ff;
 		background-image: linear-gradient(to right, #ffe404 0%, #ff9600 100%);
@@ -71,7 +72,32 @@
 	}
 }
 
+#connectModal {
+	.modal {
+		&-header {
+			.close {
+				position: absolute;
+				top: 15px;
+				right: 15px;
+			}
+		}
+		&-dialog {
+			max-width: 90%;
+		}
+		&-title {
+			margin: auto;	
+		}
+	}
+}
+
 @media only screen  and (max-width : 991px) {
+	#connectModal {
+		.modal {
+			&-title {
+				margin: 0;	
+			}
+		}
+	}
 	.form-row>.col, .form-row>[class*=col-] {
 		padding-left: 0;
 		padding-right: 0;
@@ -80,6 +106,10 @@
 		padding: 0 5px;
 	}
 	.feedback {
+		background-position: 70% 0;
+		-webkit-background-size: 350%;
+		-o-background-size: 350%;
+		background-size: 350%;
 		form {
 			width: 100%;
 		}

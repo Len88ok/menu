@@ -24,10 +24,33 @@
 				    <div class="navbar-nav">
 						<a class="nav-item nav-link" href="#">Как работает</a>
 						<a class="nav-item nav-link" href="#">Цены</a>
-						<a class="nav-item nav-link back-call" href="#">Заказать обратный звонок</a>
+						<a class="nav-item nav-link" href="#contactsModal" data-toggle="modal">Контакты</a>
 				    </div>
 				  </div>
 				</nav>
+				<!-- Modal -->
+				<div class="modal fade" id="contactsModal" tabindex="-1" role="dialog" aria-labelledby="contactsModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header text-center">
+				        <h5 class="modal-title" id="contactsModalLabel">Контакты</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body text-center">
+		        		<div class="header-contacts-item">
+		        			<span class="header-contacts-caption">Телефон:</span>
+		        			<span>+7 (495) 205 64 63</span>
+		        		</div>
+		        		<div class="header-contacts-item">
+		        			<span class="header-contacts-caption">E-mail: </span>
+		        			<span>info@intouchmenu.com</span>
+		        		</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 				<div class="header-info">
 					<ul class="header-info-list">
 						<li class="header-info-item">
@@ -59,9 +82,9 @@
 						<div class="advantages-banner-title">Электронное <span>меню</span></div>
 						<div class="advantages-banner-subtitle"><span>Интерактивное меню под Вашим брендом</span></div>
 						<ul class="advantages-banner-list">
-							<li class="advantages-banner-item"><span><i>01</i></span>Повышенная скорость обслуживания</li>
-							<li class="advantages-banner-item"><span><i>02</i></span>Лояльность клиентов</li>
-							<li class="advantages-banner-item"><span><i>03</i></span>Увеличение среднего чека</li>
+							<li class="advantages-banner-item"><span><i></i></span>Повышенная скорость обслуживания</li>
+							<li class="advantages-banner-item"><span><i></i></span>Лояльность клиентов</li>
+							<li class="advantages-banner-item"><span><i></i></span>Увеличение среднего чека</li>
 						</ul>
 					</div>
 				</div>
@@ -72,7 +95,7 @@
 						<div class="row">
 							<div class="col-xs-3 col-md-5">
 								<div class="about-menu-img">
-									<img src="images/phone-menu.png" alt="phone">
+									<img src="images/phones.png" alt="phone">
 								</div>
 							</div>
 							<div class="col-xs-9 col-md-7">
@@ -85,7 +108,7 @@
 										<p>Подключайте ваше заведение к нашему сервису и создаёте своим гостям комфортные условия посещений.</p>
 									</div> 
 									<div class="about-menu-demo">
-										<a class="btn" href="#"><span>&#8212;</span>Попробовать демо</a>
+										<a class="btn" href="#connectModal" data-toggle="modal"><span>&#8212;</span>Попробовать демо</a>
 									</div>
 								</div>
 							</div>
@@ -96,7 +119,6 @@
 						<div class="row">
 							<div class="col-sm-6 col-lg-3">
 								<div class="about-menu-item">
-									<div class="about-menu-item-number">01</div>
 									<div class="about-menu-item-heading">
 										<span class="about-menu-item-icon">
 											<img src="images/menu-icon.svg" alt="icon">
@@ -110,7 +132,6 @@
 							</div>
 							<div class="col-sm-6 col-lg-3">
 								<div class="about-menu-item">
-									<div class="about-menu-item-number">02</div>
 									<div class="about-menu-item-heading">
 										<span class="about-menu-item-icon">
 											<img src="images/know-icon.svg" alt="icon">
@@ -124,7 +145,6 @@
 							</div>
 							<div class="col-sm-6 col-lg-3">
 								<div class="about-menu-item">
-									<div class="about-menu-item-number">03</div>
 									<div class="about-menu-item-heading">
 										<span class="about-menu-item-icon">
 											<img src="images/waiter-icon.svg" alt="icon">
@@ -141,7 +161,7 @@
 									<div class="about-menu-item-number">04</div>
 									<div class="about-menu-item-heading">
 										<span class="about-menu-item-icon"><img src="images/bill-icon.svg" alt="icon"></span>
-										<span class="about-menu-item-text">Увеличение среднего чека</span>
+										<span class="about-menu-item-text">Увеличение  среднего чека</span>
 									</div>
 									<div class="about-menu-item-caption">Отзывы о блюдах помогут увеличить средний чек</div>
 								</div>
@@ -259,11 +279,11 @@
 							<div class="light-package-icon">
 								<img src="images/save-icon.svg" alt="icon">
 							</div>
-							<div class="light-package-info">Хранение  данных 45 дней</div>
+							<div class="light-package-info">Хранение  данных<br> 45 дней</div>
 						</div>
 					</div>
 					<div class="light-package-btn">
-						<a href="#" class="btn"><span>&#8212;</span>Подключить</a>
+						<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
 					</div>
 				</div>
 			</section>
@@ -271,9 +291,8 @@
 				<div class="container">
 					<div class="section-title text-center">МЕНЮ ИНТЕГРИРОВАНО</div>
 					<ul class="partners-list">
-						<li class="partners-item"><img src="images/partner1.png" alt="partner-img"></li>
-						<li class="partners-item"><img src="images/partner2.png" alt="partner-img"></li>
-						<li class="partners-item"><img src="images/partner3.png" alt="partner-img"></li>
+						<li class="partners-item iiko"><img src="images/partner1.png" alt="partner-img"></li>
+						<li class="partners-item keeper"><img src="images/partner3.png" alt="partner-img"></li>
 					</ul>
 				</div>
 			</section>
@@ -342,7 +361,16 @@
 					</div>
 				</div>
 				<div class="places-btn">
-					<a href="#" class="btn"><span>&#8212;</span>Подключить</a>
+					<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
+				</div>
+			</div>
+		</section>
+		<section class="how-works">
+			<div class="container">
+				<div class="section-title text-center">Как работает меню</div>
+				<div class="how-works-text">
+					<p>Электронное меню можно использовать практически на <span>любых</span> видах смартфонов и планшетов. Формат мобильного приложения позволяет гостям использовать привычный интерфейс своего смартфона.</p>
+					<p>Электронное <span>меню</span> включает информацию о заведении, информацию о персонале, отзывы о блюдах, новости, акции, систему бронирования столиков.</p>
 				</div>
 			</div>
 		</section>
@@ -510,7 +538,9 @@
 		<section class="tablet-menu">
 			<div class="container">
 				<div class="tablet-menu-img">
-					<img src="images/bg-menu-2.png" alt="tablet-menu">
+					<img class="tablet-menu-desktop" src="images/bg-menu-2.png" alt="tablet-menu">
+					<img class="tablet-menu-mob" src="images/tablet-1.png" alt="tablet-menu">
+					<img class="tablet-menu-mob" src="images/tablet-2.png" alt="tablet-menu">
 					<span class="tablet-menu-heading">
 						ВАШЕ <span>МЕНЮ </span><br> В МОБИЛЬНОМ ПЛАНШЕТЕ
 					</span>
@@ -520,7 +550,8 @@
 		<section class="personal-profile">
 			<div class="container">
 				<div class="personal-profile-img">
-					<img src="images/bg-profile.png" alt="profile">
+					<img class="personal-profile-desktop" src="images/bg-profile.png" alt="profile">
+					<img class="personal-profile-mob" src="images/bg-profile-mob.png" alt="profile">
 					<span class="personal-profile-heading">
 						<span>ЛИЧНЫЙ КАБИНЕТ </span><br> УПРАВЛЯЮЩЕГО РЕСТОРАНОМ
 					</span>
@@ -535,63 +566,77 @@
 							<div class="cloud-heading">Наше <span>меню</span><br>  является облачным решением</div>
 							<div class="cloud-info">Выбор девайсов зависит исключительно от Ваших вкусов и предпочтений</div>
 							<div class="cloud-btn">
-								<a href="#" class="btn"><span>&#8212;</span>Хочу подключить</a>
+								<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Хочу подключить</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="feedback">
-			<div class="section-title text-center">НАЧНИТЕ ИСПОЛЬЗОВАТЬ ПРЯМО СЕЙЧАС</div>
-			<div class="container">
-				<form>
-				  <div class="form-row">
-				    <div class="form-group col-md-6">
-				    	<label for="inputName">Имя</label>
-				      <input type="name" class="form-control" id="inputName">
-				      <span class="icon-required">*</span>
-				    </div>
-				    <div class="form-group col-md-6">
-				    	<label for="inputPhone">Телефон</label>
-				      <input type="tel" class="form-control" id="inputPhone" maxlength="20">
-				       <span class="icon-required">*</span>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				  	<label for="inputEmail">Email</label>
-				    <input type="text" class="form-control" id="inputEmail">
-				     <span class="icon-required">*</span>
-				  </div>
-				  <div class="form-row">
-				    <div class="form-group col-md-6">
-				    	<label for="inputPlace">Название заведения</label>
-				      <input type="text" class="form-control" id="inputPlace">
-				       <span class="icon-required">&#42;</span>
-				    </div>
-				    <div class="form-group col-md-6">
-				      <select class="form-control">
-				        <option>Тип заведения</option>
-				      </select>
-				       <span class="icon-required caret">&#9660;</span>
-				    </div>
-				  </div>
-				  <div class="form-row">
-				    <div class="form-group col-md-6">
-				    	<label for="inputPassword1">Пароль</label>
-				      <input type="password" class="form-control" id="inputPassword1">
-				       <span class="icon-required">*</span>
-				    </div>
-				    <div class="form-group col-md-6">
-				    	<label for="inputPassword2">Повторите пароль</label>
-				      <input type="password" class="form-control" id="inputPassword2">
-				       <span class="icon-required">*</span>
-				    </div>
-				  </div>
-				  <button type="submit" class="btn"><span>&#8212;</span>Заказать</button>
-				</form>
-			</div>
-		</section>
+		<!-- Modal -->
+		<div class="modal fade" id="connectModal" tabindex="-1" role="dialog" aria-labelledby="connectModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+			    <section class="feedback"> 
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="connectModalLabel"><div class="section-title"><strong>НАЧНИТЕ ИСПОЛЬЗОВАТЬ</strong> ПРЯМО СЕЙЧАС</div></h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body text-center"> 			
+	    			<div class="container">
+	    				<form>
+	    				  <div class="form-row">
+	    				    <div class="form-group col-md-6">
+	    				    	<label for="inputName">Имя</label>
+	    				      <input type="name" class="form-control" id="inputName">
+	    				      <span class="icon-required">*</span>
+	    				    </div>
+	    				    <div class="form-group col-md-6">
+	    				    	<label for="inputPhone">Телефон</label>
+	    				      <input type="tel" class="form-control" id="inputPhone" maxlength="20">
+	    				       <span class="icon-required">*</span>
+	    				    </div>
+	    				  </div>
+	    				  <div class="form-group">
+	    				  	<label for="inputEmail">Email</label>
+	    				    <input type="text" class="form-control" id="inputEmail">
+	    				     <span class="icon-required">*</span>
+	    				  </div>
+	    				  <div class="form-row">
+	    				    <div class="form-group col-md-6">
+	    				    	<label for="inputPlace">Название заведения</label>
+	    				      <input type="text" class="form-control" id="inputPlace">
+	    				       <span class="icon-required">&#42;</span>
+	    				    </div>
+	    				    <div class="form-group col-md-6">
+	    				      <select class="form-control">
+	    				        <option>Тип заведения</option>
+	    				      </select>
+	    				       <span class="icon-required caret">&#9660;</span>
+	    				    </div>
+	    				  </div>
+	    				  <div class="form-row">
+	    				    <div class="form-group col-md-6">
+	    				    	<label for="inputPassword1">Пароль</label>
+	    				      <input type="password" class="form-control" id="inputPassword1">
+	    				       <span class="icon-required">*</span>
+	    				    </div>
+	    				    <div class="form-group col-md-6">
+	    				    	<label for="inputPassword2">Повторите пароль</label>
+	    				      <input type="password" class="form-control" id="inputPassword2">
+	    				       <span class="icon-required">*</span>
+	    				    </div>
+	    				  </div>
+	    				  <button type="submit" class="btn"><span>&#8212;</span>Заказать</button>
+	    				</form>
+	    			</div>
+			      </div>
+		      	</section>
+		    </div>
+		  </div>
+		</div>
 		</main>
 		<footer class="footer">
 			<div class="container">
@@ -650,7 +695,7 @@
 									Мы пришлем вам доступ к бесплатной версии вашего мобильного меню прямо сейчас
 								</div>
 								<div class="footer-btn">
-									<a href="#" class="btn"><span>&#8212;</span>Получить доступ</a>
+									<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Получить доступ</a>
 								</div>
 							</div>
 						</div>

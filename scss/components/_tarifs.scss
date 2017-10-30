@@ -160,6 +160,10 @@
 
 @media only screen  and (max-width : 991px) { 
 	.tarifs {
+		display: none;
+		&-header {
+			padding: 20px 0;
+		}
 		&-slider {
 			width: 60%;
 			margin: auto;
@@ -167,10 +171,11 @@
 		margin-bottom: 20px;
 		&-wrap {
 			margin-top: 30px;
+			box-shadow: none;
 			&.basic,
 			&.lite,
 			&.standart {
-				height: 1250px;
+				height: auto;
 			}
 		}
 		&-options {

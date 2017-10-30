@@ -711,14 +711,18 @@ header {
 
 @media only screen and (max-width: 991px) {
   .tarifs {
+    display: none;
     margin-bottom: 20px; }
+    .tarifs-header {
+      padding: 20px 0; }
     .tarifs-slider {
       width: 60%;
       margin: auto; }
     .tarifs-wrap {
-      margin-top: 30px; }
+      margin-top: 30px;
+      box-shadow: none; }
       .tarifs-wrap.basic, .tarifs-wrap.lite, .tarifs-wrap.standart {
-        height: 1250px; }
+        height: auto; }
     .tarifs-options-item {
       margin-bottom: 20px; }
     .tarifs-price-number {

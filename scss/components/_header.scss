@@ -27,6 +27,7 @@ header{
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: -1;
 	&-item {
 		display: inline-block;
 		&:last-child {
@@ -100,6 +101,12 @@ header{
 	.navbar-nav .nav-link {
 		padding-left: 5px;
 		padding-right: 5px;
+	}
+}
+
+@media only screen  and (max-width : 479px) { 
+	.header-info {
+		right: 10px;
 	}
 }
 

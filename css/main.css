@@ -74,7 +74,8 @@ header {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  z-index: -1; }
   .header-info-item {
     display: inline-block; }
     .header-info-item:last-child {
@@ -132,6 +133,10 @@ header {
   .navbar-nav .nav-link {
     padding-left: 5px;
     padding-right: 5px; } }
+
+@media only screen and (max-width: 479px) {
+  .header-info {
+    right: 10px; } }
 
 @media only screen and (min-width: 1824px) {
   .navbar-brand {
@@ -1034,7 +1039,9 @@ header {
 #connectModal .modal-header .close {
   position: absolute;
   top: 15px;
-  right: 15px; }
+  right: 15px;
+  outline: none;
+  box-shadow: none; }
 
 #connectModal .modal-dialog {
   max-width: 90%; }

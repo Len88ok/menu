@@ -44,7 +44,7 @@
 
 @media only screen  and (max-width : 991px) {
 	.tablet-menu {
-		padding-bottom: 150px;
+		padding-bottom: 250px;
 		padding-top: 90px;
 		&-heading {
 			top: -75px;
@@ -58,6 +58,12 @@
 		&-mob {
 			display: inline-block;
 		}
+	}
+}
+
+@media only screen  and (max-width : 767px) {
+	.tablet-menu {
+		padding-bottom: 150px;
 	}
 }
 

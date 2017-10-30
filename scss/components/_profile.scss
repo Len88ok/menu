@@ -36,8 +36,8 @@
 
 @media only screen  and (max-width : 991px) {
 	.personal-profile {	
-		margin-top: -180px;
-		padding-top: 210px;
+		margin-top: -300px;
+		padding-top: 250px;
 		&-heading {
 			width: 100%;
 			left: 0;
@@ -51,6 +51,13 @@
 		&-mob {
 			display: inline-block;
 		}
+	}
+}
+
+@media only screen  and (max-width : 767px) {
+	.personal-profile {	
+		margin-top: -180px;
+		padding-top: 210px;
 	}
 }
 

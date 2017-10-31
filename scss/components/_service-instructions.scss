@@ -104,7 +104,20 @@
 	}
 }
 
-@media only screen  and (max-width : 1169px) {
+
+@media only screen  and (max-width : 1199px) {
+	.service-instructions {
+		&-title {
+			font-size: 18px;
+		}
+		&-info {
+			min-height: 320px; 
+			padding: 20px 25px 0;
+		}
+	}
+}
+
+@media only screen  and (max-width : 991px) {
 	.service-instructions {
 		&-wrap {
 			padding-top: 0;

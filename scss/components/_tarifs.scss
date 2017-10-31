@@ -216,30 +216,6 @@
 
 @media only screen  and (max-width : 1199px) { 
 	.tarifs {
-		&-wrap {
-			&.lite {
-				height: 1300px;
-			}
-			&.basic {
-				height: 1370px;
-			}
-			&.standart {
-				height: 1300px;
-			}
-		}	
-		&-price {
-			&-number {
-				font-size: 40px;
-			}
-		}
-		&-content {
-			padding: 40px 15px 0 30px;
-		}	
-	}
-}
-
-@media only screen  and (max-width : 991px) { 
-	.tarifs {
 		display: none;
 		&-price {
 			font-size: 22px;

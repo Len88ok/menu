@@ -34,6 +34,17 @@
 	}
 }
 
+@media only screen  and (max-width : 1199px) {
+	.personal-profile {
+		&-img	{
+			text-align: center;
+			img {
+				width: 70%;
+			}
+		}
+	}
+}
+
 @media only screen  and (max-width : 991px) {
 	.personal-profile {	
 		margin-top: -300px;

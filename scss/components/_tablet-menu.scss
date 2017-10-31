@@ -33,11 +33,19 @@
 	}
 }
 
-@media only screen  and (max-width : 1169px) {
+@media only screen  and (max-width : 1199px) {
 	.tablet-menu {
 		&-heading {
 		    right: 0;
     		left: auto;
+    		top: -20px;
+    		text-align: left;
+		}
+		&-img {
+			text-align: center;
+			img {
+				width: 80%;
+			}
 		}
 	}
 }

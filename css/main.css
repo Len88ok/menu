@@ -94,7 +94,7 @@ header {
 
 .header-info {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -461,7 +461,14 @@ header {
   .service-instructions-graph {
     margin-top: 2em; }
 
-@media only screen and (max-width: 1169px) {
+@media only screen and (max-width: 1199px) {
+  .service-instructions-title {
+    font-size: 18px; }
+  .service-instructions-info {
+    min-height: 320px;
+    padding: 20px 25px 0; } }
+
+@media only screen and (max-width: 991px) {
   .service-instructions-wrap {
     padding-top: 0; }
   .service-instructions-info {
@@ -527,7 +534,7 @@ header {
   background-repeat: no-repeat;
   background-position: center center; }
   .partners-list {
-    width: 80%;
+    width: 50%;
     margin: auto; }
   .partners-item {
     display: inline-block;
@@ -749,18 +756,6 @@ header {
   margin-top: 0; }
 
 @media only screen and (max-width: 1199px) {
-  .tarifs-wrap.lite {
-    height: 1300px; }
-  .tarifs-wrap.basic {
-    height: 1370px; }
-  .tarifs-wrap.standart {
-    height: 1300px; }
-  .tarifs-price-number {
-    font-size: 40px; }
-  .tarifs-content {
-    padding: 40px 15px 0 30px; } }
-
-@media only screen and (max-width: 991px) {
   .tarifs {
     display: none;
     margin-bottom: 20px; }
@@ -868,10 +863,16 @@ header {
   .tablet-menu-mob {
     display: none; }
 
-@media only screen and (max-width: 1169px) {
+@media only screen and (max-width: 1199px) {
   .tablet-menu-heading {
     right: 0;
-    left: auto; } }
+    left: auto;
+    top: -20px;
+    text-align: left; }
+  .tablet-menu-img {
+    text-align: center; }
+    .tablet-menu-img img {
+      width: 80%; } }
 
 @media only screen and (max-width: 991px) {
   .tablet-menu {
@@ -925,6 +926,12 @@ header {
     display: inline-block; }
   .personal-profile-mob {
     display: none; }
+
+@media only screen and (max-width: 1199px) {
+  .personal-profile-img {
+    text-align: center; }
+    .personal-profile-img img {
+      width: 70%; } }
 
 @media only screen and (max-width: 991px) {
   .personal-profile {

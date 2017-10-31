@@ -318,7 +318,6 @@ header {
     font-weight: 300;
     font-size: 28px;
     margin-bottom: 45px;
-    text-align: center;
     color: #00c6ff; }
   .about-menu-item-heading {
     margin-bottom: 30px; }
@@ -463,10 +462,6 @@ header {
     margin-top: 2em; }
 
 @media only screen and (max-width: 1169px) {
-  .service-instructions-title {
-    font-size: 18px; } }
-
-@media only screen and (max-width: 991px) {
   .service-instructions-wrap {
     padding-top: 0; }
   .service-instructions-info {
@@ -557,6 +552,8 @@ header {
     width: 100%; } }
 
 .places-item {
+  margin-left: auto;
+  margin-right: auto;
   width: 170px;
   height: 170px;
   border: 1px solid #f6f6f6;
@@ -578,11 +575,13 @@ header {
   color: #ffffff;
   text-transform: uppercase; }
 
+@media only screen and (max-width: 1199px) {
+  .places-item {
+    margin-bottom: 20px;
+    padding-top: 40px; } }
+
 @media only screen and (max-width: 991px) {
   .places-item {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
     padding-top: 20px; }
   .places-heading {
     font-size: 20px; }
@@ -744,6 +743,18 @@ header {
       font-size: 50px; }
   .tarifs-details-number {
     font-size: 30px; } }
+
+@media only screen and (max-width: 1199px) {
+  .tarifs-wrap.lite {
+    height: 1300px; }
+  .tarifs-wrap.basic {
+    height: 1370px; }
+  .tarifs-wrap.standart {
+    height: 1300px; }
+  .tarifs-price-number {
+    font-size: 40px; }
+  .tarifs-content {
+    padding: 40px 15px 0 30px; } }
 
 @media only screen and (max-width: 991px) {
   .tarifs {
@@ -1162,6 +1173,10 @@ header {
     background-color: #00c6ff;
     font-size: 12px; }
 
+@media only screen and (max-width: 1199px) {
+  .footer-item.access {
+    display: none; } }
+
 @media only screen and (max-width: 991px) {
   .footer-top {
     padding: 35px 0 0; }
@@ -1172,8 +1187,6 @@ header {
     margin-bottom: 20px; }
   .footer-item.contacts {
     margin-bottom: 20px; }
-  .footer-item.access {
-    display: none; }
   .footer-contacts-item {
     margin-bottom: 10px; }
   .footer-btn {

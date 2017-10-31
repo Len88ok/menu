@@ -1,5 +1,7 @@
 .places {
 	&-item {
+		margin-left: auto;
+		margin-right: auto;
 		width: 170px;
 		height: 170px;
 		border: 1px solid #f6f6f6;
@@ -25,12 +27,18 @@
 	}
 }
 
+@media only screen  and (max-width : 1199px) {
+	.places {
+		&-item {
+			margin-bottom: 20px;
+			padding-top: 40px;
+		}
+	}
+}
+
 @media only screen  and (max-width : 991px) { 
 	.places {
 		&-item {
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 20px;
 			padding-top: 20px;
 		}
 		&-heading {

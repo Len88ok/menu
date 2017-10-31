@@ -81,6 +81,16 @@
 	}
 }
 
+@media only screen  and (max-width : 1199px) {
+	.footer {
+		&-item {
+			&.access {
+				display: none;
+			}
+		}
+	}
+}
+
 @media only screen  and (max-width : 991px) {
 	.footer {
 		&-top{
@@ -96,9 +106,6 @@
 			}
 			&.contacts {
 				margin-bottom: 20px;
-			}
-			&.access {
-				display: none;
 			}
 		}
 		&-contacts {

@@ -361,7 +361,8 @@ header {
       margin-bottom: 15px; }
       .about-menu-item-heading {
         margin-bottom: 15px;
-        padding-bottom: 15px; }
+        padding-bottom: 15px;
+        border-bottom: 4px solid #eeeeee; }
         .about-menu-item-heading span {
           vertical-align: middle; }
       .about-menu-item-text {
@@ -373,9 +374,7 @@ header {
   .about-menu-img {
     width: 100%; }
     .about-menu-img img {
-      margin-top: 25%; }
-  .about-menu-heading {
-    border-bottom: 4px solid #eeeeee; } }
+      margin-top: 25%; } }
 
 @media only screen and (max-width: 767px) {
   .about-menu {

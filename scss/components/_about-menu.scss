@@ -79,6 +79,7 @@
 			&-heading {
 				margin-bottom: 15px;
 				padding-bottom: 15px;
+				border-bottom: 4px solid #eeeeee;
 				span {
 					vertical-align: middle;
 				}
@@ -100,9 +101,6 @@
 			img {
 				margin-top: 25%;
 			}
-		}
-		&-heading {
-			border-bottom: 4px solid #eeeeee;
 		}
 	}
 }

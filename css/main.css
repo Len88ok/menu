@@ -478,7 +478,7 @@ header {
     .service-instructions-img img {
       margin-left: 40px; }
   .service-instructions-info {
-    padding: 15px; }
+    padding: 20px; }
   .service-instructions-title {
     font-size: 14px; }
   .service-instructions-text {
@@ -486,7 +486,7 @@ header {
     .service-instructions-text p {
       margin-bottom: .5em; }
   .service-instructions-right {
-    height: 250px; }
+    height: 270px; }
   .service-instructions-graph {
     margin-top: 0; } }
 

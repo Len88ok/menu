@@ -744,6 +744,10 @@ header {
   .tarifs-details-number {
     font-size: 30px; } }
 
+.modal .tarifs-wrap.lite, .modal .tarifs-wrap.basic, .modal .tarifs-wrap.standart {
+  height: auto;
+  margin-top: 0; }
+
 @media only screen and (max-width: 1199px) {
   .tarifs-wrap.lite {
     height: 1300px; }

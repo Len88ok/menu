@@ -200,6 +200,20 @@
 	}
 }
 
+.modal {
+	.tarifs {
+		&-wrap {
+			&.lite,
+			&.basic,
+			&.standart {
+				height: auto;
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+
 @media only screen  and (max-width : 1199px) { 
 	.tarifs {
 		&-wrap {

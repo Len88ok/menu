@@ -3,12 +3,12 @@
 	background-repeat: no-repeat;
 	background-position: center center;   
 	&-list {
-		width: 50%;
+		width: 40%;
 		margin: auto;
 	}
 	&-item {
 		display: inline-block;
-		width: 49%;
+		width: 45%;
 		text-align: center;
 		padding: 20px;
 		&:hover,
@@ -36,6 +36,14 @@
 		&-item {
 			display: block;
 			width: 100%;
+		}
+	}
+}
+
+@media only screen  and (min-width : 1824px) {
+	.partners {
+		&-list {
+			width: 30%;
 		}
 	}
 }

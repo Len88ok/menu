@@ -1,25 +1,28 @@
 .tablet-menu {
 	position: relative;
-	padding-bottom: 150px;
+	padding-bottom: 200px;
 	background-image: url('../images/bg-yellow.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover; 
 	  -o-background-size: cover; 
 	  background-size: cover;   
-	img {
-		width: 100%;
-	}
-	&-img	{
+	&-img {
 		position: relative;
+		text-align: center;
+		padding: 80px 0 0;
+		img {
+			width: 85%;
+		}
 	}
 	&-heading {
 		position: absolute;
 		right: 35px;
-		top: 0;
+		top: 50px;
 		font-size: 30px;
 		text-transform: uppercase;
 		font-weight: 300;
+		text-align: left;
 		span {
 			font-weight: 700;
 			color: #fff;
@@ -42,7 +45,6 @@
     		text-align: left;
 		}
 		&-img {
-			text-align: center;
 			img {
 				width: 80%;
 			}
@@ -66,6 +68,9 @@
 		&-mob {
 			display: inline-block;
 		}
+		&-img {
+			padding: 0;
+		}
 	}
 }
 
@@ -77,9 +82,10 @@
 
 @media only screen  and (min-width : 1824px) {
 	.tablet-menu {
-		padding-bottom: 200px;
+		padding-bottom: 300px;
 		&-heading {
 			font-size: 36px;
+			right: 180px;
 		}
 	}
 }

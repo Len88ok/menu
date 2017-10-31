@@ -1,6 +1,6 @@
 .advantages-banner {
 	margin-top: 70px;
-	min-height: 600px;
+	min-height: 400px;
 	background-image: url("../images/bg-top.png");
 	background-position: 0 0;
 	background-repeat: no-repeat; 
@@ -21,7 +21,7 @@
 		z-index: -1;
 	}
 	&-content {
-		padding-top: 15%;
+		padding-top: 5%;
 		padding-left: 40px;
 		color: #ffffff;
 	}
@@ -133,7 +133,7 @@
 }
 @media only screen  and (min-width : 1824px) {
 	.advantages-banner {
- 		min-height: 800px;
+ 		min-height: 600px;
  		&-title {
  			font-size: 70px;
  			margin-bottom: 0;

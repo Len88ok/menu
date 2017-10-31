@@ -1,15 +1,17 @@
 .about-menu {
-	padding: 60px 0 100px; 
+	padding: 0 0 100px; 
 	&-info {
 		margin-bottom: 40px;
 	}
 	&-img {
-		width: 324px;
-		height: 585px;
+		width: 70%;
+		height: auto;
 		margin-right: 30px;
 		margin-left: auto;
 		img {
+			width: 100%;
 			display: inline-block;
+			margin-top: 35%;
 		}		
 	}
 	&-info-wrap {
@@ -54,15 +56,12 @@
 	}
 }
 
-@media only screen  and (max-width : 991px) {
+@media only screen  and (max-width : 1199px) {
 	.about-menu {
-		padding: 30px 0; 
+		padding: 30px 0;
 		&-img {
-			margin-right: auto;
-			width: 60%;
-			height: auto;
 			img {
-				width: 100%;
+				margin-top: 20%;
 			}
 		}
 		&-info-wrap {
@@ -80,7 +79,6 @@
 			&-heading {
 				margin-bottom: 15px;
 				padding-bottom: 15px;
-				border-bottom: 4px solid #eeeeee;
 				span {
 					vertical-align: middle;
 				}
@@ -95,8 +93,39 @@
 	}
 }
 
+@media only screen  and (max-width : 991px) {
+	.about-menu {
+		&-img {
+			width: 100%;
+			img {
+				margin-top: 25%;
+			}
+		}
+		&-heading {
+			border-bottom: 4px solid #eeeeee;
+		}
+	}
+}
+
+@media only screen  and (max-width : 767px) {
+	.about-menu { 
+		padding: 0;
+		&-img {
+			margin-right: auto;
+			width: 60%;
+			height: auto;
+		}		
+	}
+}
+
 @media only screen  and (min-width : 1824px) {
 	.about-menu {
+		padding: 60px 0 100px; 
+		&-img {
+			img {
+				margin-top: 10%;
+			}
+		}
 		&-item {
 			&-heading {
 				font-size: 22px;

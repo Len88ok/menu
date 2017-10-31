@@ -19,7 +19,7 @@ ul, ol {
   margin: 0; }
 
 section {
-  padding: 60px 0; }
+  padding: 30px 0; }
 
 a:hover,
 a:focus {
@@ -35,7 +35,7 @@ a:focus {
   font-size: 36px;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 30px; }
+  margin-bottom: .5em; }
   .section-title span {
     font-weight: 700;
     color: #00c6ff; }
@@ -64,7 +64,7 @@ a:focus {
     font-size: 24px;
     margin-bottom: 15px; }
   section {
-    padding: 30px 0; }
+    padding: 15px 0; }
   .btn {
     width: 100%; } }
 
@@ -300,7 +300,7 @@ header {
       margin-bottom: 50px; } }
 
 .about-menu {
-  padding: 0 0 100px; }
+  padding-bottom: 50px; }
   .about-menu-info {
     margin-bottom: 40px; }
   .about-menu-img {
@@ -385,14 +385,12 @@ header {
       height: auto; } }
 
 @media only screen and (min-width: 1824px) {
-  .about-menu {
-    padding: 60px 0 100px; }
-    .about-menu-img img {
-      margin-top: 10%; }
-    .about-menu-item-heading {
-      font-size: 22px; }
-    .about-menu-icon {
-      margin-right: 0; } }
+  .about-menu-img img {
+    margin-top: 10%; }
+  .about-menu-item-heading {
+    font-size: 22px; }
+  .about-menu-icon {
+    margin-right: 0; } }
 
 .service-instructions {
   background-color: #f5f5f5;
@@ -403,10 +401,11 @@ header {
     max-width: 50%;
     height: 100%;
     position: absolute;
-    padding: 4% 10% 0 5%; }
+    padding: 5%; }
     .service-instructions-info img {
       width: 100%; }
   .service-instructions-img {
+    overflow: hidden;
     width: 450px;
     height: 350px; }
     .service-instructions-img img {
@@ -420,15 +419,13 @@ header {
       top: -45px;
       left: 0; }
     .service-instructions-right .service-instructions-img {
-      float: right;
-      margin-bottom: 60px; }
+      float: right; }
   .service-instructions-info.first {
     background-color: #e89c53;
     background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 100%); }
   .service-instructions-info.second {
     background-color: #f8df1d;
-    background-image: linear-gradient(to right, #ffe404 0%, #ff9600 100%);
-    padding: 5%; }
+    background-image: linear-gradient(to right, #ffe404 0%, #ff9600 100%); }
   .service-instructions-info.third {
     background-color: #00c6ff;
     background-image: linear-gradient(to right, #00b5ff 0%, #04fcff 100%); }
@@ -465,27 +462,43 @@ header {
       height: 1px;
       background: #000000; }
   .service-instructions-graph {
-    margin-top: 2em; }
+    margin-top: 1em; }
+
+@media only screen and (max-width: 1800px) {
+  .service-instructions-img {
+    width: 350px;
+    height: 250px; }
+  .service-instructions-right {
+    height: 350px; }
+  .service-instructions-info {
+    padding: 25px;
+    max-width: 60%; } }
 
 @media only screen and (max-width: 1600px) {
   .service-instructions-img {
-    width: 350px;
-    height: 250px; } }
-
-@media only screen and (max-width: 1400px) {
-  .service-instructions-img {
     width: 300px;
-    height: 200px; } }
+    height: 200px; }
+    .service-instructions-img img {
+      margin-left: 40px; }
+  .service-instructions-info {
+    padding: 15px; }
+  .service-instructions-title {
+    font-size: 14px; }
+  .service-instructions-text {
+    font-size: 12px; }
+    .service-instructions-text p {
+      margin-bottom: .5em; }
+  .service-instructions-right {
+    height: 250px; }
+  .service-instructions-graph {
+    margin-top: 0; } }
 
 @media only screen and (max-width: 1199px) {
   .service-instructions-img {
     width: 250px;
     height: 150px; }
-  .service-instructions-title {
-    font-size: 18px; }
-  .service-instructions-info {
-    min-height: 320px;
-    padding: 20px 25px 0; } }
+    .service-instructions-img img {
+      margin-left: 40px; } }
 
 @media only screen and (max-width: 991px) {
   .service-instructions-wrap {
@@ -514,22 +527,20 @@ header {
   .service-instructions-text {
     font-size: 16px; } }
 
-.light-package-proposition {
-  padding: 2% 0; }
-  .light-package-proposition span {
-    display: inline-block;
-    color: #2b2b2b;
-    font-size: 36px;
-    font-weight: 400;
-    vertical-align: bottom;
-    padding-bottom: 35px; }
+.light-package-proposition span {
+  display: inline-block;
+  color: #2b2b2b;
+  font-size: 36px;
+  font-weight: 400;
+  vertical-align: bottom;
+  padding-bottom: 35px; }
 
 .light-package-icon {
   margin-bottom: 20px;
   height: 57px; }
 
 .light-package-info {
-  margin-bottom: 70px; }
+  margin-bottom: 30px; }
   .light-package-info a {
     color: #00c6ff; }
 
@@ -865,13 +876,13 @@ header {
   .tablet-menu-img {
     position: relative;
     text-align: center;
-    padding: 80px 0 0; }
+    padding: 40px 0 0; }
     .tablet-menu-img img {
-      width: 85%; }
+      width: 80%; }
   .tablet-menu-heading {
     position: absolute;
-    right: 35px;
-    top: 50px;
+    right: 50px;
+    top: 30px;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 300;
@@ -888,10 +899,8 @@ header {
   .tablet-menu-heading {
     right: 0;
     left: auto;
-    top: -20px;
-    text-align: left; }
-  .tablet-menu-img img {
-    width: 80%; } }
+    top: 0;
+    text-align: left; } }
 
 @media only screen and (max-width: 991px) {
   .tablet-menu {
@@ -922,7 +931,7 @@ header {
 
 .personal-profile {
   margin-top: -400px;
-  padding-top: 400px;
+  padding-top: 350px;
   background-color: #f5f5f5;
   background-image: url("../images/bg-transform.png");
   background-repeat: no-repeat;
@@ -934,7 +943,7 @@ header {
     position: relative;
     text-align: center; }
     .personal-profile-img img {
-      width: 70%; }
+      width: 60%; }
   .personal-profile-heading {
     position: absolute;
     left: 35px;
@@ -975,7 +984,7 @@ header {
     font-size: 36px; } }
 
 .cloud {
-  min-height: 600px;
+  min-height: 400px;
   background-image: url("../images/cloud-bg.png");
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -993,7 +1002,7 @@ header {
   .cloud-info {
     margin-bottom: 2em; }
   .cloud-content {
-    padding-top: 20%; }
+    padding-top: 10%; }
 
 @media only screen and (max-width: 991px) {
   .cloud {
@@ -1012,7 +1021,7 @@ header {
 
 @media only screen and (min-width: 1824px) {
   .cloud {
-    min-height: 750px;
+    min-height: 500px;
     -webkit-background-size: 40%;
     -o-background-size: 40%;
     background-size: 40%; }

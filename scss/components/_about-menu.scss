@@ -1,5 +1,5 @@
 .about-menu {
-	padding: 0 0 100px; 
+	padding-bottom: 50px;
 	&-info {
 		margin-bottom: 40px;
 	}
@@ -118,7 +118,6 @@
 
 @media only screen  and (min-width : 1824px) {
 	.about-menu {
-		padding: 60px 0 100px; 
 		&-img {
 			img {
 				margin-top: 10%;

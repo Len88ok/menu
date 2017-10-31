@@ -1,5 +1,5 @@
 .cloud {
-	min-height: 600px; 
+	min-height: 400px; 
 	background-image: url('../images/cloud-bg.png');
 	background-repeat: no-repeat;
 	background-position: 0 center;
@@ -20,7 +20,7 @@
 		margin-bottom: 2em;
 	}
 	&-content {
-		padding-top: 20%;
+		padding-top: 10%;
 	}
 }
 
@@ -45,12 +45,12 @@
 }
 @media only screen  and (min-width : 1824px) {
 	.cloud {
-		min-height: 750px; 
+		min-height: 500px; 
 		-webkit-background-size: 40%; 
 		  -o-background-size: 40%; 
 		  background-size: 40%;
-    &-heading {
-    	font-size: 36px;
-    }
+	    &-heading {
+	    	font-size: 36px;
+	    }
 	}
 }

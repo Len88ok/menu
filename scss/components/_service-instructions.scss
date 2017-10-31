@@ -8,12 +8,13 @@
 		max-width: 50%; 
 		height: 100%; 
 		position: absolute;
-		padding: 4% 10% 0 5%;
+		padding: 5%;
 		img {
 			width: 100%;
 		}
 	}
 	&-img {
+		overflow: hidden;
 		width: 450px;
 		height: 350px;
 		img {
@@ -31,7 +32,6 @@
 		}
 		.service-instructions-img {
 			float: right;
-			margin-bottom: 60px;
 		}
 	}
 	&-info {
@@ -42,7 +42,6 @@
 		&.second {
 			background-color: #f8df1d;
 			background-image: linear-gradient(to right, #ffe404 0%, #ff9600 100%);
-			padding: 5%;
 		}
 		&.third {
 			background-color: #00c6ff;
@@ -87,45 +86,67 @@
 		}
 	}
 	&-graph {
-		margin-top: 2em;
+		margin-top: 1em;
+	}
+}
+
+@media only screen  and (max-width : 1800px) { 
+	.service-instructions {
+		&-img {
+			width: 350px;
+			height: 250px;
+		}
+		&-right {
+			height: 350px;
+		}
+		&-info {
+			padding: 25px;
+			max-width: 60%; 
+		}
 	}
 }
 
 @media only screen  and (max-width : 1600px) { 
 	.service-instructions {
 		&-img {
-			width: 350px;
-			height: 250px;
-		}
-	}
-}
-
-@media only screen  and (max-width : 1400px) { 
-	.service-instructions {
-		&-img {
 			width: 300px;
 			height: 200px;
+			img{
+				margin-left: 40px;
+			}
+		}
+		&-info {
+			padding: 15px;
+		}
+		&-title {
+			font-size: 14px;
+		}
+		&-text {
+			font-size: 12px;
+			p {
+				margin-bottom: .5em;
+			}
+		}
+		&-right {
+			height: 250px;
+		}
+		&-graph {
+			margin-top: 0;
 		}
 	}
 }
 
-
-@media only screen  and (max-width : 1199px) {
+@media only screen  and (max-width : 1199px) { 
 	.service-instructions {
 		&-img {
 			width: 250px;
 			height: 150px;
-		}
-		&-title {
-			font-size: 18px;
-		}
-		&-info {
-			min-height: 320px; 
-			padding: 20px 25px 0;
+			img{
+				margin-left: 40px;
+			}
 		}
 	}
 }
-
 @media only screen  and (max-width : 991px) {
 	.service-instructions {
 		&-wrap {

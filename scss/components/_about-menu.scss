@@ -11,11 +11,10 @@
 		img {
 			width: 100%;
 			display: inline-block;
-			margin-top: 35%;
 		}		
 	}
 	&-info-wrap {
-		padding-top: 90px;
+		padding-top: 0;
 		max-width: 650px; 
 	}
 	&-subtitle {
@@ -61,7 +60,7 @@
 		padding: 30px 0;
 		&-img {
 			img {
-				margin-top: 20%;
+				margin-top: 15%;
 			}
 		}
 		&-info-wrap {
@@ -98,9 +97,6 @@
 	.about-menu {
 		&-img {
 			width: 100%;
-			img {
-				margin-top: 25%;
-			}
 		}
 	}
 }
@@ -112,17 +108,15 @@
 			margin-right: auto;
 			width: 60%;
 			height: auto;
+			img {
+				margin-top: 10%;
+			}
 		}		
 	}
 }
 
 @media only screen  and (min-width : 1824px) {
 	.about-menu {
-		&-img {
-			img {
-				margin-top: 10%;
-			}
-		}
 		&-item {
 			&-heading {
 				font-size: 22px;

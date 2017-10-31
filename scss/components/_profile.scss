@@ -35,9 +35,15 @@
 	}
 }
 
-@media only screen  and (max-width : 991px) {
+@media only screen  and (max-width : 1199px) {
 	.personal-profile {	
 		margin-top: -300px;
+		padding-top: 300px;
+	}
+}
+
+@media only screen  and (max-width : 991px) {
+	.personal-profile {	
 		padding-top: 250px;
 		&-heading {
 			width: 100%;

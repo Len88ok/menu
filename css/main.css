@@ -310,10 +310,9 @@ header {
     margin-left: auto; }
     .about-menu-img img {
       width: 100%;
-      display: inline-block;
-      margin-top: 35%; }
+      display: inline-block; }
   .about-menu-info-wrap {
-    padding-top: 90px;
+    padding-top: 0;
     max-width: 650px; }
   .about-menu-subtitle {
     margin-top: -30px;
@@ -348,7 +347,7 @@ header {
   .about-menu {
     padding: 30px 0; }
     .about-menu-img img {
-      margin-top: 20%; }
+      margin-top: 15%; }
     .about-menu-info-wrap {
       padding-top: 30px; }
     .about-menu-subtitle {
@@ -372,9 +371,7 @@ header {
 
 @media only screen and (max-width: 991px) {
   .about-menu-img {
-    width: 100%; }
-    .about-menu-img img {
-      margin-top: 25%; } }
+    width: 100%; } }
 
 @media only screen and (max-width: 767px) {
   .about-menu {
@@ -382,11 +379,11 @@ header {
     .about-menu-img {
       margin-right: auto;
       width: 60%;
-      height: auto; } }
+      height: auto; }
+      .about-menu-img img {
+        margin-top: 10%; } }
 
 @media only screen and (min-width: 1824px) {
-  .about-menu-img img {
-    margin-top: 10%; }
   .about-menu-item-heading {
     font-size: 22px; }
   .about-menu-icon {
@@ -959,9 +956,13 @@ header {
   .personal-profile-mob {
     display: none; }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .personal-profile {
     margin-top: -300px;
+    padding-top: 300px; } }
+
+@media only screen and (max-width: 991px) {
+  .personal-profile {
     padding-top: 250px; }
     .personal-profile-heading {
       width: 100%;

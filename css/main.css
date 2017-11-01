@@ -147,9 +147,6 @@ header {
 .navbar-nav {
   padding-top: 15px; }
 
-.collapse.show .dropdown-menu {
-  display: block; }
-
 .header-info {
   position: absolute;
   right: 20px;

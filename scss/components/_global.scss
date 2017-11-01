@@ -13,16 +13,58 @@
   src: url('../fonts/Proxima_Nova/ProximaNovaSemibold.otf');
 }
 
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
 body {
 	font-family: 'ProximaNova', 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-@media only screen and (max-device-width:768px){
-	body.modal-open {
-	    overflow: hidden;
-	    position:fixed;
-	    width: 100%;
-	}
+main {
+	height: 100%;
+	padding-top: 70px;
+}
+
+.wrapper {
+	height: 100%;
+}
+
+.header-all {
+	display: block;
+}
+
+.header-mobile {
+	display: none;
+}
+
+.desktop-screen {
+	display: block;
+}
+.mobile-screen {
+	height: 100%;
+	display: none;
+}
+
+.mobile-screen .footer {
+	height: 100%;
+}
+
+#connectModal {
+	z-index: 1100;
+}
+
+// You probably already have this, but just in case you don't
+body.modal-open {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+//only on this platform does it need to be fixed as well
+body.platform-ios.modal-open {
+  position: fixed;
 }
 
 ul, ol {
@@ -85,6 +127,21 @@ a:focus {
 }
 
 @media only screen  and (max-width : 991px) {
+	.header-mobile {
+		display: block;
+	}
+	.header-all {
+		display: none;
+	}
+	.desktop-screen {
+		display: none;
+	}
+	.mobile-screen {
+		display: block;
+	}
+	footer {
+		display: none;
+	}
 	.section {
 		&-title {
 			font-size: 24px;
@@ -98,6 +155,14 @@ a:focus {
 		width: 100%;
 	}
 }
+
+@media only screen  and (max-width : 350px) {
+	main {
+		padding-top: 50px;
+	}
+}
+
+
 
 
 

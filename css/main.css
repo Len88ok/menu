@@ -10,14 +10,47 @@
   font-family: 'ProximaNovaSemibold';
   src: url("../fonts/Proxima_Nova/ProximaNovaSemibold.otf"); }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
 body {
   font-family: 'ProximaNova', 'Open Sans', Helvetica, Arial, sans-serif; }
 
-@media only screen and (max-device-width: 768px) {
-  body.modal-open {
-    overflow: hidden;
-    position: fixed;
-    width: 100%; } }
+main {
+  height: 100%;
+  padding-top: 70px; }
+
+.wrapper {
+  height: 100%; }
+
+.header-all {
+  display: block; }
+
+.header-mobile {
+  display: none; }
+
+.desktop-screen {
+  display: block; }
+
+.mobile-screen {
+  height: 100%;
+  display: none; }
+
+.mobile-screen .footer {
+  height: 100%; }
+
+#connectModal {
+  z-index: 1100; }
+
+body.modal-open {
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
+body.platform-ios.modal-open {
+  position: fixed; }
 
 ul, ol {
   list-style-type: none;
@@ -66,6 +99,16 @@ a:focus {
     vertical-align: top; }
 
 @media only screen and (max-width: 991px) {
+  .header-mobile {
+    display: block; }
+  .header-all {
+    display: none; }
+  .desktop-screen {
+    display: none; }
+  .mobile-screen {
+    display: block; }
+  footer {
+    display: none; }
   .section-title {
     font-size: 24px;
     margin-bottom: 15px; }
@@ -73,6 +116,10 @@ a:focus {
     padding: 15px 0; }
   .btn {
     width: 100%; } }
+
+@media only screen and (max-width: 350px) {
+  main {
+    padding-top: 50px; } }
 
 header {
   position: relative; }
@@ -95,8 +142,11 @@ header {
 #contactsModal .modal-body {
   padding: 50px 0; }
 
-.collapse.show {
+.navbar-nav {
   padding-top: 15px; }
+
+.collapse.show .dropdown-menu {
+  display: block; }
 
 .header-info {
   position: absolute;
@@ -184,7 +234,6 @@ header {
     margin-right: 5rem; } }
 
 .advantages-banner {
-  margin-top: 70px;
   min-height: 400px;
   background-image: url("../images/bg-top.png");
   background-position: 0 0;
@@ -644,6 +693,18 @@ header {
 .how-works {
   background-color: #f1fbfd; }
 
+.tarifs-lite-desktop {
+  position: relative;
+  display: block; }
+
+.tarifs-lite-mobile {
+  position: relative;
+  display: none; }
+  .tarifs-lite-mobile .light-package {
+    padding: 40px 0 20px; }
+  .tarifs-lite-mobile .close {
+    color: #00c6ff !important; }
+
 .tarifs {
   background-color: #f5f5f5; }
   .tarifs-slider-item {
@@ -815,6 +876,12 @@ header {
       margin: auto; }
     .tarifs-options-item {
       margin-bottom: 20px; } }
+
+@media only screen and (max-width: 991px) {
+  .tarifs-lite-desktop {
+    display: none; }
+  .tarifs-lite-mobile {
+    display: block; } }
 
 @media only screen and (max-width: 350px) {
   .tarifs-price {
@@ -1115,9 +1182,6 @@ header {
 #connectModal .modal-body {
   padding: 0 10px; }
 
-#connectModal .modal-dialog {
-  max-width: 90%; }
-
 #connectModal .modal-title {
   margin: auto; }
 
@@ -1220,7 +1284,11 @@ header {
 
 @media only screen and (max-width: 1199px) {
   .footer-item.access {
-    display: none; } }
+    display: none; }
+  .mobile-screen .footer-item.access {
+    display: block; }
+  .mobile-screen .footer-logo {
+    margin: 40px auto; } }
 
 @media only screen and (max-width: 991px) {
   .footer-top {

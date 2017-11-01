@@ -24,8 +24,13 @@ header{
 		}	
 	}	
 }
+.navbar-nav {
+	padding-top: 15px;
+}
 .collapse.show {
-    padding-top: 15px;
+    .dropdown-menu {
+    	display: block;
+    }
 }
 .header-info {
 	position: absolute;

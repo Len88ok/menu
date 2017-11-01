@@ -1,3 +1,17 @@
+.tarifs-lite-desktop {
+	position: relative;
+	display: block;
+}
+.tarifs-lite-mobile {
+	position: relative;
+	display: none;
+	.light-package {
+		padding: 40px 0 20px;
+	}
+	.close {
+		color: #00c6ff !important;
+	}
+}
 .tarifs {
 	background-color: #f5f5f5;
 	&-slider {
@@ -257,6 +271,15 @@
 				margin-bottom: 20px;
 			}
 		}
+	}
+}
+
+@media only screen  and (max-width : 991px) {
+	.tarifs-lite-desktop {
+		display: none;
+	}
+	.tarifs-lite-mobile {
+		display: block;
 	}
 }
 

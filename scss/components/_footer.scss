@@ -90,6 +90,18 @@
 			}
 		}
 	}
+	.mobile-screen {
+		.footer {
+			&-item {
+				&.access {
+					display: block;
+				}
+			}
+			&-logo {
+				margin: 40px auto;
+			}
+		}
+	}	
 }
 
 @media only screen  and (max-width : 991px) {

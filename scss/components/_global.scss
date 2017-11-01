@@ -17,10 +17,12 @@ body {
 	font-family: 'ProximaNova', 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
- body.modal-open {
-    overflow: hidden;
-    position:fixed;
-    width: 100%;
+@media only screen and (max-device-width:768px){
+	body.modal-open {
+	    overflow: hidden;
+	    position:fixed;
+	    width: 100%;
+	}
 }
 
 ul, ol {

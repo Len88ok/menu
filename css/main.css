@@ -141,7 +141,7 @@ a:focus {
     -o-transition: all .6s ease-in-out;
     -ms-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out; }
-    .mobile-screen .page:target {
+    .mobile-screen .page.active {
       margin-left: 0; }
 
 header {
@@ -1101,7 +1101,7 @@ header {
 
 @media only screen and (max-width: 991px) {
   .cloud {
-    min-height: 100%;
+    min-height: 250px;
     text-align: center; }
     .cloud-content {
       padding-top: 0; }

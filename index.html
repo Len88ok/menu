@@ -118,7 +118,7 @@
 		
 
 		<main class="mobile-screen">
-			<section id="page1" class="page main-page">
+			<section id="page1" class="page active main-page">
 				<div class="advantages-banner">
 					<div class="container">
 						<div class="advantages-banner-content">
@@ -1180,6 +1180,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha38-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script>
   $(document).ready(function(){
+  	$('.header-mobile .nav-link').click(function(){
+  		$('.mobile-screen .page').removeClass('active');
+  		$('.mobile-screen .page:target').addClass('active');
+   	});
   	$(function(){ 
   	     var navMain = $(".navbar-collapse"); // avoid dependency on #id
   	     // "a:not([data-toggle])" - to avoid issues caused

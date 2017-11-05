@@ -26,7 +26,8 @@ body {
 }
 
 main {
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	padding-top: 70px;
 }
 
@@ -51,7 +52,7 @@ main {
 }
 
 .mobile-screen .footer {
-	height: 100%;
+	height: 90vh;
 }
 
 #connectModal {

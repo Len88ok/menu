@@ -34,8 +34,13 @@
 			width: 100%;
 		}
 		&-item {
-			display: block;
-			width: 100%;
+			display: inline-block;
+			width: 48%;
+			&.keeper {
+				img {
+					width: 100%;
+				}
+			}
 		}
 	}
 }

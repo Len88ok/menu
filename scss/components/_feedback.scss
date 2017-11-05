@@ -74,6 +74,10 @@
 
 #connectModal {
 	.modal {
+		&-dialog {
+			max-width: 90%;
+			margin: auto;
+		}
 		&-header {
 			padding: 0 10px;
 			border-bottom: none;
@@ -99,6 +103,9 @@
 		.modal {
 			&-title {
 				margin: 0;	
+			}
+			&-dialog {
+				max-width: 100%;
 			}
 		}
 	}

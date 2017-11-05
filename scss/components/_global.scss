@@ -183,7 +183,8 @@ a:focus {
 		-o-transition: all .6s ease-in-out;
 		-ms-transition: all .6s ease-in-out;
 		transition: all .6s ease-in-out;
-		&.active {
+		&.active,
+		&:target {
 			margin-left: 0;
 		}
 	}

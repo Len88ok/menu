@@ -66,19 +66,19 @@
 				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup2">
 					  <ul class="navbar-nav">
 				        <li class="nav-item">
-				          <a class="nav-link" href="#page1">Главная</a>
+				          <a class="nav-link mob-pages" href="#page1">Главная</a>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="#page2">Как работает сервис</a>
+				          <a class="nav-link mob-pages" href="#page2">Как работает сервис</a>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="#page3">Где можно применить</a>
+				          <a class="nav-link mob-pages" href="#page3">Где можно применить</a>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="#page4">Как работает меню</a>
+				          <a class="nav-link mob-pages" href="#page4">Как работает меню</a>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="#page5">Преимущества сервиса</a>
+				          <a class="nav-link mob-pages" href="#page5">Преимущества сервиса</a>
 				        </li>
 				        <li class="nav-item dropdown">
 				          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -91,7 +91,7 @@
 				          </div>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="#page6">Контакты</a>
+				          <a class="nav-link mob-pages" href="#page6">Контакты</a>
 				        </li>
 				      </ul>
 				  </div>
@@ -1180,9 +1180,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha38-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script>
   $(document).ready(function(){
-  	$('.header-mobile .nav-link').click(function(){
+  	$('.header-mobile .mob-pages').click(function(){
   		$('.mobile-screen .page').removeClass('active');
-  		$('.mobile-screen .page:target').addClass('active');
    	});
   	$(function(){ 
   	     var navMain = $(".navbar-collapse"); // avoid dependency on #id

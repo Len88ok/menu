@@ -141,7 +141,7 @@ a:focus {
     -o-transition: all .6s ease-in-out;
     -ms-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out; }
-    .mobile-screen .page.active {
+    .mobile-screen .page.active, .mobile-screen .page:target {
       margin-left: 0; }
 
 header {

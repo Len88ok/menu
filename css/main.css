@@ -132,6 +132,7 @@ a:focus {
   .mobile-screen .page {
     width: 100%;
     height: 100%;
+    background-color: #FFF;
     position: absolute;
     margin-left: -102%;
     padding-top: 70px;
@@ -1103,7 +1104,7 @@ header {
 
 @media only screen and (max-width: 991px) {
   .cloud {
-    min-height: 250px;
+    min-height: 220px;
     text-align: center; }
     .cloud-content {
       padding-top: 0; }
@@ -1227,6 +1228,8 @@ header {
     -webkit-background-size: 350%;
     -o-background-size: 350%;
     background-size: 350%; }
+    .feedback .section-title {
+      max-width: 80%; }
     .feedback form {
       width: 100%; }
     .feedback .form-control {

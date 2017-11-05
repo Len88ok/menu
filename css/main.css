@@ -125,25 +125,24 @@ a:focus {
   main {
     padding-top: 50px; } }
 
-.mobile-screen {
+.mobile-screen .page {
+  width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto; }
-  .mobile-screen .page {
-    width: 100%;
-    height: 100%;
-    background-color: #FFF;
-    position: absolute;
-    margin-left: -102%;
-    padding-top: 70px;
-    z-index: 2;
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    -o-transition: all .6s ease-in-out;
-    -ms-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out; }
-    .mobile-screen .page.active, .mobile-screen .page:target {
-      margin-left: 0; }
+  overflow-y: auto;
+  background-color: #FFF;
+  position: absolute;
+  margin-left: -102%;
+  padding-top: 70px;
+  padding-bottom: 0;
+  z-index: 2;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out; }
+  .mobile-screen .page.active, .mobile-screen .page:target {
+    margin-left: 0; }
 
 header {
   position: relative; }

@@ -168,16 +168,16 @@ a:focus {
 
 
 .mobile-screen {
-	height: 100vh;
-	overflow-x: hidden;
-    overflow-y: auto;
 	.page {
 		width: 100%;
-		height: 100%;	
+		height: 100vh;
+		overflow-x: hidden;
+	    overflow-y: auto;	
 		background-color: #FFF;
 		position: absolute;	
 		margin-left: -102%;
 		padding-top: 70px;
+		padding-bottom: 0;
 		z-index:2;
 		-webkit-transition: all .6s ease-in-out;
 		-moz-transition: all .6s ease-in-out;

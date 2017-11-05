@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Intouch Menu</title>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -66,19 +66,19 @@
 				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup2">
 					  <ul class="navbar-nav">
 				        <li class="nav-item">
-				          <a class="nav-link" href="index.html">Главная</a>
+				          <a class="nav-link" href="#page1">Главная</a>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="pages/service-instructions.html">Как работает сервис</a>
+				          <a class="nav-link" href="#page2">Как работает сервис</a>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="pages/places.html">Где можно применить</a>
+				          <a class="nav-link" href="#page3">Где можно применить</a>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="pages/how-works.html">Как работает меню</a>
+				          <a class="nav-link" href="#page4">Как работает меню</a>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="pages/about-menu-advantages.html">Преимущества сервиса</a>
+				          <a class="nav-link" href="#page5">Преимущества сервиса</a>
 				        </li>
 				        <li class="nav-item dropdown">
 				          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -91,7 +91,7 @@
 				          </div>
 				        </li>
 				        <li class="nav-item">
-				          <a class="nav-link" href="pages/contacts.html">Контакты</a>
+				          <a class="nav-link" href="#page6">Контакты</a>
 				        </li>
 				      </ul>
 				  </div>
@@ -115,9 +115,11 @@
 				</nav>					
 			</header>
 		</div>
-		<main>
-			<div class="all-screens">
-				<section class="advantages-banner">
+		
+
+		<main class="mobile-screen">
+			<section id="page1" class="page main-page">
+				<div class="advantages-banner">
 					<div class="container">
 						<div class="advantages-banner-content">
 							<div class="advantages-banner-title">Электронное <span>меню</span></div>
@@ -129,8 +131,8 @@
 							</ul>
 						</div>
 					</div>
-				</section>
-				<section class="about-menu">
+				</div>
+				<div class="about-menu">
 					<div class="container">
 						<div class="about-menu-info">
 							<div class="row">
@@ -156,65 +158,10 @@
 							</div>
 						</div>					
 					</div>
-				</section>
-			</div>
-			<div class="desktop-screen">
-				<section class="about-menu-advantages">
-					<div class="container">
-						<div class="section-title text-center">Преимущества сервиса</div>
-						<div class="row">
-							<div class="col-sm-6 col-xl-3">
-								<div class="about-menu-item">
-									<div class="about-menu-item-heading">
-										<span class="about-menu-item-icon">
-											<img src="images/menu-icon.svg" alt="icon">
-										</span>
-										<span class="about-menu-item-text">Электронное меню</span>
-									</div>
-									<div class="about-menu-item-caption">
-										Привычное меню в электронном виде  с оформлением под Ваш бренд
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 col-xl-3">
-								<div class="about-menu-item">
-									<div class="about-menu-item-heading">
-										<span class="about-menu-item-icon">
-											<img src="images/know-icon.svg" alt="icon">
-										</span>
-										<span class="about-menu-item-text">Ознакомление  с меню</span>
-									</div>
-									<div class="about-menu-item-caption">
-										Возможность ознакомиться с меню,  не дожидаясь официанта
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 col-xl-3">
-								<div class="about-menu-item">
-									<div class="about-menu-item-heading">
-										<span class="about-menu-item-icon">
-											<img src="images/waiter-icon.svg" alt="icon">
-										</span>
-										<span class="about-menu-item-text">Вызов официанта</span>
-									</div>
-									<div class="about-menu-item-caption">
-										Вызов официанта за свой стол.  Больше не надо звать и искать официанта
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 col-xl-3">
-								<div class="about-menu-item">
-									<div class="about-menu-item-heading">
-										<span class="about-menu-item-icon"><img src="images/bill-icon.svg" alt="icon"></span>
-										<span class="about-menu-item-text">Увеличение  среднего чека</span>
-									</div>
-									<div class="about-menu-item-caption">Отзывы о блюдах помогут увеличить средний чек</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="service-instructions">
+				</div>
+			</section>
+			<section id="page2" class="page service-instructions-page">
+				<div class="service-instructions">
 					<div class="container">
 						<div class="section-title text-center">Как работает наш сервис</div>
 						<div class="service-instructions-wrap">
@@ -289,60 +236,12 @@
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="light-package text-center">
+				</div>
+			</section>
+			<section id="page3" class="page places-page">
+				<div class="places text-center">
 					<div class="container">
-					<div class="section-title text-center">Начните с пакетом <span>LITE</span></div>
-					<div class="light-package-proposition">
-						<span>всего за</span>
-						<img src="images/zero.png" alt="zero">
-						<span>руб/мес</span>
-					</div>
-						<div class="row">
-							<div class="col-sm-6 col-lg-3">
-								<div class="light-package-icon">
-									<img src="images/menu-icon-l.svg" alt="icon">
-								</div>
-								<div class="light-package-info">
-									Электронное меню  в формате веб приложения  на домене <a href="#">intouchmenu.com</a> 
-								</div>
-							</div>
-							<div class="col-sm-6 col-lg-3">
-								<div class="light-package-icon">
-									<img src="images/admin-icon.svg" alt="icon">
-								</div>
-								<div class="light-package-info">Административная панель  управления клиентом и меню</div>
-							</div>
-							<div class="col-sm-6 col-lg-3">
-								<div class="light-package-icon">
-									<img src="images/support-icon.svg" alt="icon">
-								</div>
-								<div class="light-package-info">Поддержка  одного языка на выбор</div>
-							</div>
-							<div class="col-sm-6 col-lg-3">
-								<div class="light-package-icon">
-									<img src="images/save-icon.svg" alt="icon">
-								</div>
-								<div class="light-package-info">Хранение  данных<br> 45 дней</div>
-							</div>
-						</div>
-						<div class="light-package-btn">
-							<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
-						</div>
-					</div>
-				</section>
-				<section class="partners">
-					<div class="container">
-						<div class="section-title text-center">МЕНЮ ИНТЕГРИРОВАНО</div>
-						<ul class="partners-list">
-							<li class="partners-item iiko"><img src="images/partner1.png" alt="partner-img"></li>
-							<li class="partners-item keeper"><img src="images/partner3.png" alt="partner-img"></li>
-						</ul>
-					</div>
-				</section>
-				<section class="places text-center">
-					<div class="container">
-					<div class="section-title text-center">ГДЕ МОЖНО ПРИМЕНИТЬ</div>
+						<div class="section-title text-center">ГДЕ МОЖНО ПРИМЕНИТЬ</div>
 						<div class="row justify-content-center">
 							<div class="col-6 col-lg-2">
 								<div class="places-item">
@@ -409,8 +308,10 @@
 							<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
 						</div>
 					</div>
-				</section>
-				<section id="howWorks" class="how-works">
+				</div>
+			</section>
+			<section id="page4" class="page how-works-page">
+				<div class="how-works">
 					<div class="container">
 						<div class="section-title text-center">Как работает меню</div>
 						<div class="how-works-text">
@@ -418,8 +319,8 @@
 							<p>Электронное меню включает информацию о заведении, информацию о персонале, отзывы о блюдах, новости, акции, систему бронирования столиков.</p>
 						</div>
 					</div>
-				</section>
-				<section class="smartphone-menu">
+				</div>
+				<div class="smartphone-menu">
 					<div class="section-title text-center">ВАШЕ <span>МЕНЮ</span> В СМАРТФОНЕ</div>
 					<div class="container">
 						<ul class="smartphone-menu-list">
@@ -430,8 +331,8 @@
 							<li class="smartphone-menu-item"><img src="images/smartphone5.png" alt="smartphone"></li>
 						</ul>
 					</div>
-				</section>
-				<section class="tablet-menu">
+				</div>
+				<div class="tablet-menu">
 					<div class="container">
 						<div class="tablet-menu-img">
 							<img class="tablet-menu-desktop" src="images/bg-menu-2.png" alt="tablet-menu">
@@ -442,8 +343,8 @@
 							</span>
 						</div>
 					</div>
-				</section>
-				<section class="personal-profile">
+				</div>
+				<div class="personal-profile">
 					<div class="container">
 						<div class="personal-profile-img">
 							<img class="personal-profile-desktop" src="images/bg-profile.png" alt="profile">
@@ -453,8 +354,17 @@
 							</span>
 						</div>
 					</div>
-				</section>
-				<section class="cloud">
+				</div>
+				<div class="partners">
+					<div class="container">
+						<div class="section-title text-center">МЕНЮ ИНТЕГРИРОВАНО</div>
+						<ul class="partners-list">
+							<li class="partners-item iiko"><img src="images/partner1.png" alt="partner-img"></li>
+							<li class="partners-item keeper"><img src="images/partner3.png" alt="partner-img"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="cloud">
 					<div class="container">
 						<div class="row">
 							<div class="offset-sm-5 col-sm-7">
@@ -468,9 +378,419 @@
 							</div>
 						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
+			<section id="page5" class="page advantages-page">
+				<div class="about-menu-advantages">
+					<div class="container">
+						<div class="section-title text-center">Преимущества сервиса</div>
+						<div class="row">
+							<div class="col-sm-6 col-xl-3">
+								<div class="about-menu-item">
+									<div class="about-menu-item-heading">
+										<span class="about-menu-item-icon">
+											<img src="images/menu-icon.svg" alt="icon">
+										</span>
+										<span class="about-menu-item-text">Электронное меню</span>
+									</div>
+									<div class="about-menu-item-caption">
+										Привычное меню в электронном виде  с оформлением под Ваш бренд
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xl-3">
+								<div class="about-menu-item">
+									<div class="about-menu-item-heading">
+										<span class="about-menu-item-icon">
+											<img src="images/know-icon.svg" alt="icon">
+										</span>
+										<span class="about-menu-item-text">Ознакомление  с меню</span>
+									</div>
+									<div class="about-menu-item-caption">
+										Возможность ознакомиться с меню,  не дожидаясь официанта
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xl-3">
+								<div class="about-menu-item">
+									<div class="about-menu-item-heading">
+										<span class="about-menu-item-icon">
+											<img src="images/waiter-icon.svg" alt="icon">
+										</span>
+										<span class="about-menu-item-text">Вызов официанта</span>
+									</div>
+									<div class="about-menu-item-caption">
+										Вызов официанта за свой стол.  Больше не надо звать и искать официанта
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xl-3">
+								<div class="about-menu-item">
+									<div class="about-menu-item-heading">
+										<span class="about-menu-item-icon"><img src="images/bill-icon.svg" alt="icon"></span>
+										<span class="about-menu-item-text">Увеличение  среднего чека</span>
+									</div>
+									<div class="about-menu-item-caption">Отзывы о блюдах помогут увеличить средний чек</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="page6" class="page contacts-page">
+				<div class="footer">
+					<div class="container">
+						<div class="footer-top">
+							<div class="footer-item logo">
+								<div class="footer-logo">
+									<img src="images/logo-light.png" alt="logo">
+								</div>					
+							</div>
+							<div class="footer-item contacts">
+								<div class="footer-contacts">
+									<div class="footer-contacts-item">
+										<span class="footer-contacts-address">Москва, Россия </span>
+										<span>ул. Староалексеевская,7 </span>
+										<span>бизнес-центр "Калибр"</span>
+									</div>
+									<div class="footer-contacts-item">
+										<span class="footer-contacts-caption">Телефон:</span>
+										<span>+7 (495) 205 64 63</span>
+									</div>
+									<div class="footer-contacts-item">
+										<span class="footer-contacts-caption">E-mail: </span>
+										<span>info@intouchmenu.com</span>
+									</div>											
+								</div>
+							</div>
+							<div class="footer-item access">
+								<div class="footer-info">
+									Мы пришлем вам доступ к бесплатной  версии вашего мобильного меню прямо сейчас
+								</div>
+								<div class="footer-btn">
+									<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Получить доступ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>							
 		</main>
+
+		<main class="desktop-screen">
+			<section class="about-menu-advantages">
+				<div class="container">
+					<div class="section-title text-center">Преимущества сервиса</div>
+					<div class="row">
+						<div class="col-sm-6 col-xl-3">
+							<div class="about-menu-item">
+								<div class="about-menu-item-heading">
+									<span class="about-menu-item-icon">
+										<img src="images/menu-icon.svg" alt="icon">
+									</span>
+									<span class="about-menu-item-text">Электронное меню</span>
+								</div>
+								<div class="about-menu-item-caption">
+									Привычное меню в электронном виде  с оформлением под Ваш бренд
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-3">
+							<div class="about-menu-item">
+								<div class="about-menu-item-heading">
+									<span class="about-menu-item-icon">
+										<img src="images/know-icon.svg" alt="icon">
+									</span>
+									<span class="about-menu-item-text">Ознакомление  с меню</span>
+								</div>
+								<div class="about-menu-item-caption">
+									Возможность ознакомиться с меню,  не дожидаясь официанта
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-3">
+							<div class="about-menu-item">
+								<div class="about-menu-item-heading">
+									<span class="about-menu-item-icon">
+										<img src="images/waiter-icon.svg" alt="icon">
+									</span>
+									<span class="about-menu-item-text">Вызов официанта</span>
+								</div>
+								<div class="about-menu-item-caption">
+									Вызов официанта за свой стол.  Больше не надо звать и искать официанта
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-3">
+							<div class="about-menu-item">
+								<div class="about-menu-item-heading">
+									<span class="about-menu-item-icon"><img src="images/bill-icon.svg" alt="icon"></span>
+									<span class="about-menu-item-text">Увеличение  среднего чека</span>
+								</div>
+								<div class="about-menu-item-caption">Отзывы о блюдах помогут увеличить средний чек</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="service-instructions">
+				<div class="container">
+					<div class="section-title text-center">Как работает наш сервис</div>
+					<div class="service-instructions-wrap">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="service-instructions-right">
+									<div class="service-instructions-info first">
+										<div class="service-instructions-title">
+											Подключение к меню  через гостевой WI-FI 
+										</div>
+										<div class="service-instructions-text">
+											<p>Гость подсключается к гостевой WI-FI вашего заведения, далее выбирает сеть free меню, подключается к электронному меню. </p>
+											<p>Данный вариант подключения не имеет возможности функции заказа </p>
+										</div>									
+									</div>
+									<div class="service-instructions-img">
+										<img src="images/services1.png" alt="services">
+									</div>
+								</div>							
+							</div>
+							<div class="col-lg-6">
+								<div class="service-instructions-right">
+									<div class="service-instructions-info second">
+										<div class="service-instructions-title">
+											Подключение к домену меню заведения через QR код  
+										</div>
+										<div class="service-instructions-text">
+											<p>Гость с помощью своего смартфона считывает QR код меню, далее переходит на домен заведения в котором находиться электронное меню. </p>
+											<p>Преимущества данного подключения — возможность совершить заказ.   </p>
+										</div>
+										<div class="service-instructions-graph">
+											<img src="images/graph.png" alt="graph">
+										</div>
+									</div>
+									<div class="service-instructions-img">
+										<img src="images/services2.png" alt="services">
+									</div>
+								</div>							
+							</div>
+							<div class="col-lg-6">
+								<div class="service-instructions-right">
+									<div class="service-instructions-info third">
+										<div class="service-instructions-title">
+											 Через установку app 
+										</div>
+										<div class="service-instructions-text">
+											<p>Гость подсключается к гостевой WI-FI вашего заведения, далее выбирает сеть free меню, подключается к электронному меню. </p>
+											<p>Данный вариант подключения не имеет возможности функции заказа .</p>
+										</div>
+									</div>
+									<div class="service-instructions-img">
+										<img src="images/services3.png" alt="servicesv">
+									</div>
+								</div>							
+							</div>
+							<div class="col-lg-6">
+								<div class="service-instructions-right">
+									<div class="service-instructions-info fourth">
+										<div class="service-instructions-title">
+											Через установку на мобильном терминале официанта 
+										</div>
+										<div class="service-instructions-text">
+											<p>Гость с помощью своего смартфона считывает QR код меню, далее переходит на домен заведения в котором находиться электронное меню. </p>
+											<p>Преимущества данного подключения — возможность совершить заказ.   </p>
+										</div>
+									</div>
+									<div class="service-instructions-img">
+										<img src="images/services4.png" alt="services">
+									</div>
+								</div>							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="light-package text-center">
+				<div class="container">
+				<div class="section-title text-center">Начните с пакетом <span>LITE</span></div>
+				<div class="light-package-proposition">
+					<span>всего за</span>
+					<img src="images/zero.png" alt="zero">
+					<span>руб/мес</span>
+				</div>
+					<div class="row">
+						<div class="col-sm-6 col-lg-3">
+							<div class="light-package-icon">
+								<img src="images/menu-icon-l.svg" alt="icon">
+							</div>
+							<div class="light-package-info">
+								Электронное меню  в формате веб приложения  на домене <a href="#">intouchmenu.com</a> 
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="light-package-icon">
+								<img src="images/admin-icon.svg" alt="icon">
+							</div>
+							<div class="light-package-info">Административная панель  управления клиентом и меню</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="light-package-icon">
+								<img src="images/support-icon.svg" alt="icon">
+							</div>
+							<div class="light-package-info">Поддержка  одного языка на выбор</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="light-package-icon">
+								<img src="images/save-icon.svg" alt="icon">
+							</div>
+							<div class="light-package-info">Хранение  данных<br> 45 дней</div>
+						</div>
+					</div>
+					<div class="light-package-btn">
+						<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
+					</div>
+				</div>
+			</section>
+			<section class="partners">
+				<div class="container">
+					<div class="section-title text-center">МЕНЮ ИНТЕГРИРОВАНО</div>
+					<ul class="partners-list">
+						<li class="partners-item iiko"><img src="images/partner1.png" alt="partner-img"></li>
+						<li class="partners-item keeper"><img src="images/partner3.png" alt="partner-img"></li>
+					</ul>
+				</div>
+			</section>
+			<section class="places text-center">
+				<div class="container">
+				<div class="section-title text-center">ГДЕ МОЖНО ПРИМЕНИТЬ</div>
+					<div class="row justify-content-center">
+						<div class="col-6 col-lg-2">
+							<div class="places-item">
+								<div class="places-icon">
+									<img src="images/cafe.svg" alt="icon">
+								</div>
+								<div class="places-heading">
+									Кафе
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-2">
+							<div class="places-item">
+								<div class="places-icon">
+									<img src="images/restraunt.svg" alt="icon">
+								</div>
+								<div class="places-heading">
+									Ресторан
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-2">
+							<div class="places-item">
+								<div class="places-icon">
+									<img src="images/hotel.svg" alt="icon">
+								</div>
+								<div class="places-heading">
+									Отель
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-2">
+							<div class="places-item">
+								<div class="places-icon">
+									<img src="images/beach.svg" alt="icon">
+								</div>
+								<div class="places-heading">
+									Пляж
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-2">
+							<div class="places-item">
+								<div class="places-icon">
+									<img src="images/fitness.svg" alt="icon">
+								</div>
+								<div class="places-heading">
+									Фитнес
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-2">
+							<div class="places-item">
+								<div class="places-icon">
+									<img src="images/microphone.svg" alt="icon">
+								</div>
+								<div class="places-heading">
+									Караоке
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="places-btn">
+						<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Подключить</a>
+					</div>
+				</div>
+			</section>
+			<section id="howWorks" class="how-works">
+				<div class="container">
+					<div class="section-title text-center">Как работает меню</div>
+					<div class="how-works-text">
+						<p>Электронное меню можно использовать практически на любых видах смартфонов и планшетов. Формат мобильного приложения позволяет гостям использовать привычный интерфейс своего смартфона.</p>
+						<p>Электронное меню включает информацию о заведении, информацию о персонале, отзывы о блюдах, новости, акции, систему бронирования столиков.</p>
+					</div>
+				</div>
+			</section>
+			<section class="smartphone-menu">
+				<div class="section-title text-center">ВАШЕ <span>МЕНЮ</span> В СМАРТФОНЕ</div>
+				<div class="container">
+					<ul class="smartphone-menu-list">
+						<li class="smartphone-menu-item"><img src="images/smartphone1.png" alt="smartphone"></li>
+						<li class="smartphone-menu-item"><img src="images/smartphone2.png" alt="smartphone"></li>
+						<li class="smartphone-menu-item with-wrap"><img src="images/smartphone-l.png" alt="smartphone"></li>
+						<li class="smartphone-menu-item"><img src="images/smartphone4.png" alt="smartphone"></li>
+						<li class="smartphone-menu-item"><img src="images/smartphone5.png" alt="smartphone"></li>
+					</ul>
+				</div>
+			</section>
+			<section class="tablet-menu">
+				<div class="container">
+					<div class="tablet-menu-img">
+						<img class="tablet-menu-desktop" src="images/bg-menu-2.png" alt="tablet-menu">
+						<img class="tablet-menu-mob" src="images/tablet-1.png" alt="tablet-menu">
+						<img class="tablet-menu-mob" src="images/tablet-2.png" alt="tablet-menu">
+						<span class="tablet-menu-heading">
+							ВАШЕ <span>МЕНЮ </span><br> В МОБИЛЬНОМ ПЛАНШЕТЕ
+						</span>
+					</div>
+				</div>
+			</section>
+			<section class="personal-profile">
+				<div class="container">
+					<div class="personal-profile-img">
+						<img class="personal-profile-desktop" src="images/bg-profile.png" alt="profile">
+						<img class="personal-profile-mob" src="images/bg-profile-mob.png" alt="profile">
+						<span class="personal-profile-heading">
+							<span>ЛИЧНЫЙ КАБИНЕТ </span><br> УПРАВЛЯЮЩЕГО РЕСТОРАНОМ
+						</span>
+					</div>
+				</div>
+			</section>
+			<section class="cloud">
+				<div class="container">
+					<div class="row">
+						<div class="offset-sm-5 col-sm-7">
+							<div class="cloud-content">
+								<div class="cloud-heading">Наше <span>меню</span><br>  является облачным решением</div>
+								<div class="cloud-info">Выбор девайсов зависит исключительно от Ваших вкусов и предпочтений</div>
+								<div class="cloud-btn">
+									<a href="#connectModal" data-toggle="modal" class="btn"><span>&#8212;</span>Хочу подключить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-top">
@@ -860,6 +1180,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha38-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script>
   $(document).ready(function(){
+  	$(function(){ 
+  	     var navMain = $(".navbar-collapse"); // avoid dependency on #id
+  	     // "a:not([data-toggle])" - to avoid issues caused
+  	     // when you have dropdown inside navbar
+  	     navMain.on("click", "a:not([data-toggle])", null, function () {
+  	         navMain.collapse('hide');
+  	     });
+  	 });
+
   	$(function() {
   	   $(".form-group input").focus(function() {
   	      $(this).parent(".form-group").each(function() {

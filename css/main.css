@@ -23,7 +23,8 @@ body {
 main {
   height: auto;
   min-height: 100%;
-  padding-top: 70px; }
+  padding-top: 70px;
+  position: relative; }
 
 .wrapper {
   height: 100%; }
@@ -38,8 +39,8 @@ main {
   display: block; }
 
 .mobile-screen {
-  height: 100%;
-  display: none; }
+  display: none;
+  padding-top: 0; }
 
 .mobile-screen .footer {
   height: 90vh; }
@@ -124,6 +125,25 @@ a:focus {
   main {
     padding-top: 50px; } }
 
+.mobile-screen {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .mobile-screen .page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: -102%;
+    padding-top: 70px;
+    z-index: 2;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out; }
+    .mobile-screen .page:target {
+      margin-left: 0; }
+
 header {
   position: relative; }
 
@@ -196,9 +216,6 @@ header {
 .navbar-light .navbar-nav .nav-item:active,
 .navbar-light .navbar-nav .nav-item.active {
   outline: none; }
-
-.dropdown:hover .dropdown-menu {
-  display: block; }
 
 @media only screen and (max-width: 991px) {
   .dropdown-menu {
@@ -310,6 +327,7 @@ header {
 
 @media only screen and (max-width: 991px) {
   .advantages-banner {
+    padding: 15px 0;
     background-position: 45% 0;
     min-height: auto; }
     .advantages-banner-content {

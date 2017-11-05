@@ -29,6 +29,7 @@ main {
 	height: auto;
 	min-height: 100%;
 	padding-top: 70px;
+	position: relative;
 }
 
 .wrapper {
@@ -47,8 +48,8 @@ main {
 	display: block;
 }
 .mobile-screen {
-	height: 100%;
 	display: none;
+	padding-top: 0;
 }
 
 .mobile-screen .footer {
@@ -164,6 +165,30 @@ a:focus {
 		padding-top: 50px;
 	}
 }
+
+
+.mobile-screen {
+	height: 100vh;
+	overflow-x: hidden;
+    overflow-y: auto;
+	.page {
+		width: 100%;
+		height: 100%;	
+		position: absolute;	
+		margin-left: -102%;
+		padding-top: 70px;
+		z-index:2;
+		-webkit-transition: all .6s ease-in-out;
+		-moz-transition: all .6s ease-in-out;
+		-o-transition: all .6s ease-in-out;
+		-ms-transition: all .6s ease-in-out;
+		transition: all .6s ease-in-out;
+		&:target {
+			margin-left: 0;
+		}
+	}
+}
+
 
 
 

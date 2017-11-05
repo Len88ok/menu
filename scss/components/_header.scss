@@ -89,11 +89,6 @@ header{
 	outline: none;
 }
 
-.dropdown:hover {
-	.dropdown-menu {
-		display: block;
-	}
-}
 @media only screen  and (max-width : 991px) { 
 	.dropdown-menu {
 		border: none;

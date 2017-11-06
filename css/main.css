@@ -129,7 +129,8 @@ a:focus {
     padding-top: 50px; } }
 
 .modal-open {
-  padding-right: 0 !important; }
+  padding-right: 0 !important;
+  width: 100%; }
 
 .modal-open .modal {
   padding-right: 0 !important; }

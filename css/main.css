@@ -18,7 +18,7 @@ html, body {
 body {
   font-family: 'ProximaNova', 'Open Sans', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
-  overflow-y: scroll !important; }
+  overflow-y: auto !important; }
 
 * {
   -webkit-overflow-scrolling: touch; }
@@ -127,6 +127,9 @@ a:focus {
 @media only screen and (max-width: 350px) {
   main {
     padding-top: 50px; } }
+
+.modal-open .modal {
+  padding-right: 0 !important; }
 
 .mobile-screen .page {
   width: 100%;

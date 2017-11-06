@@ -22,7 +22,7 @@ html, body {
 body {
 	font-family: 'ProximaNova', 'Open Sans', Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
-	overflow-y: scroll !important;
+	overflow-y: auto !important;
 }
 
 * {
@@ -170,6 +170,9 @@ a:focus {
 	}
 }
 
+.modal-open .modal {
+	padding-right: 0 !important;	
+}
 
 .mobile-screen {
 	.page {

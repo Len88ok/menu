@@ -30,15 +30,17 @@
 
 @media only screen  and (max-width : 600px) {
 	.partners {
+		padding-top: 15px;
 		&-list {
 			width: 100%;
+			text-align: center;
 		}
 		&-item {
 			display: inline-block;
-			width: 48%;
+			width: 45%;
 			&.keeper {
 				img {
-					width: 100%;
+					width: 140px;
 				}
 			}
 		}

@@ -25,6 +25,10 @@ body {
 	overflow-y: scroll !important;
 }
 
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
 main {
 	height: auto;
 	min-height: 100%;
@@ -178,7 +182,8 @@ a:focus {
 		margin-left: -102%;
 		padding-top: 70px;
 		padding-bottom: 0;
-		z-index:2;
+		z-index: 2;
+		-webkit-transform: translate3d(0, 0, 0);
 		-webkit-transition: all .6s ease-in-out;
 		-moz-transition: all .6s ease-in-out;
 		-o-transition: all .6s ease-in-out;

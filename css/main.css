@@ -654,14 +654,18 @@ header {
 @media only screen and (max-width: 600px) {
   .partners {
     padding-top: 15px; }
+    .partners .section-title {
+      margin-bottom: 5px; }
     .partners-list {
-      width: 100%;
+      width: 85%;
       text-align: center; }
     .partners-item {
       display: inline-block;
-      width: 45%; }
+      width: 48%; }
+      .partners-item.iiko img {
+        width: 80px; }
       .partners-item.keeper img {
-        width: 140px; } }
+        width: 120px; } }
 
 @media only screen and (min-width: 1824px) {
   .partners-list {

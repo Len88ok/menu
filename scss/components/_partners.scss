@@ -31,16 +31,24 @@
 @media only screen  and (max-width : 600px) {
 	.partners {
 		padding-top: 15px;
+		.section-title {
+			margin-bottom: 5px;
+		}
 		&-list {
-			width: 100%;
+			width: 85%;
 			text-align: center;
 		}
 		&-item {
 			display: inline-block;
-			width: 45%;
+			width: 48%;
+			&.iiko {
+				img {
+					width: 80px;
+				}
+			}
 			&.keeper {
 				img {
-					width: 140px;
+					width: 120px;
 				}
 			}
 		}

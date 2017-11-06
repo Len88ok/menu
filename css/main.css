@@ -128,6 +128,9 @@ a:focus {
   main {
     padding-top: 50px; } }
 
+.modal-open {
+  padding-right: 0 !important; }
+
 .modal-open .modal {
   padding-right: 0 !important; }
 
